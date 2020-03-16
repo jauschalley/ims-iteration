@@ -1,0 +1,2615 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InquiryForm /> renders correctly 1`] = `
+<form
+  className=""
+>
+  <div
+    className="cwig-card container"
+  >
+    <div
+      className="row"
+    >
+      <h3>
+        Topic Labels
+      </h3>
+    </div>
+    <div
+      className="row"
+    >
+      <select
+        name="topicAutoSelect"
+        onBlur={[Function]}
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          value={1}
+        >
+          How to Foster
+        </option>
+        <option
+          value={2}
+        >
+          Complaint
+        </option>
+        <option
+          value={3}
+        >
+          How to Adopt
+        </option>
+        <option
+          value={4}
+        >
+          ETV/IL
+        </option>
+        <option
+          value={5}
+        >
+          School Project
+        </option>
+        <option
+          value={6}
+        >
+          Kinship/Grandparents
+        </option>
+        <option
+          value={7}
+        >
+          Adoption Search
+        </option>
+        <option
+          value={8}
+        >
+          Foster Care Records
+        </option>
+        <option
+          value={9}
+        >
+          Behavioral Health
+        </option>
+        <option
+          value={10}
+        >
+          Age Guidelines
+        </option>
+        <option
+          value={11}
+        >
+          Post Adoption
+        </option>
+        <option
+          value={12}
+        >
+          Family Assistance
+        </option>
+        <option
+          value={13}
+        >
+          CPS Records/Expungement
+        </option>
+        <option
+          value={14}
+        >
+          CAN on Internet Reporting
+        </option>
+        <option
+          value={15}
+        >
+          Child Custody
+        </option>
+      </select>
+    </div>
+  </div>
+  <br />
+  <div
+    className="cwig-card container"
+  >
+    <div
+      className="row"
+    >
+      <h3>
+        Select Customer
+      </h3>
+    </div>
+    <div
+      className="row"
+    >
+      <div>
+        <fieldset
+          className="no-border no-padding"
+        >
+          <legend />
+          <label
+            className="no-wrap"
+            htmlFor="userType-Anonymous"
+          >
+            <input
+              checked={false}
+              className="usa-radio margin-right-2"
+              form={
+                Object {
+                  "dirty": false,
+                  "errors": Object {},
+                  "getFieldHelpers": [Function],
+                  "getFieldMeta": [Function],
+                  "getFieldProps": [Function],
+                  "handleBlur": [Function],
+                  "handleChange": [Function],
+                  "handleReset": [Function],
+                  "handleSubmit": [Function],
+                  "initialErrors": Object {},
+                  "initialStatus": undefined,
+                  "initialTouched": Object {},
+                  "initialValues": Object {
+                    "addressOne": "",
+                    "addressTwo": "",
+                    "city": "",
+                    "country": "",
+                    "email": "",
+                    "faxNumber": "",
+                    "firstName": "",
+                    "inquiryMedium": "",
+                    "lastName": "",
+                    "organization": "",
+                    "phoneNumber": "",
+                    "state": "",
+                    "surveyOffered": "",
+                    "topicAutoSelect": "",
+                    "topicOfRequest": Array [],
+                    "typeOfInformation": Array [],
+                    "useOfInformation": Array [],
+                    "userType": "",
+                    "zipCode": "",
+                  },
+                  "isSubmitting": false,
+                  "isValid": true,
+                  "isValidating": false,
+                  "registerField": [Function],
+                  "resetForm": [Function],
+                  "setErrors": [Function],
+                  "setFieldError": [Function],
+                  "setFieldTouched": [Function],
+                  "setFieldValue": [Function],
+                  "setFormikState": [Function],
+                  "setStatus": [Function],
+                  "setSubmitting": [Function],
+                  "setTouched": [Function],
+                  "setValues": [Function],
+                  "status": undefined,
+                  "submitCount": 0,
+                  "submitForm": [Function],
+                  "touched": Object {},
+                  "unregisterField": [Function],
+                  "validateField": [Function],
+                  "validateForm": [Function],
+                  "validateOnBlur": true,
+                  "validateOnChange": true,
+                  "validateOnMount": false,
+                  "values": Object {
+                    "addressOne": "",
+                    "addressTwo": "",
+                    "city": "",
+                    "country": "",
+                    "email": "",
+                    "faxNumber": "",
+                    "firstName": "",
+                    "inquiryMedium": "",
+                    "lastName": "",
+                    "organization": "",
+                    "phoneNumber": "",
+                    "state": "",
+                    "surveyOffered": "",
+                    "topicAutoSelect": "",
+                    "topicOfRequest": Array [],
+                    "typeOfInformation": Array [],
+                    "useOfInformation": Array [],
+                    "userType": "",
+                    "zipCode": "",
+                  },
+                }
+              }
+              id="userType-Anonymous"
+              name="userType"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="radio"
+              value="Anonymous"
+            />
+            <span
+              className="margin-right-105"
+            >
+              Anonymous
+            </span>
+          </label>
+          <label
+            className="no-wrap"
+            htmlFor="userType-New User"
+          >
+            <input
+              checked={false}
+              className="usa-radio margin-right-2"
+              form={
+                Object {
+                  "dirty": false,
+                  "errors": Object {},
+                  "getFieldHelpers": [Function],
+                  "getFieldMeta": [Function],
+                  "getFieldProps": [Function],
+                  "handleBlur": [Function],
+                  "handleChange": [Function],
+                  "handleReset": [Function],
+                  "handleSubmit": [Function],
+                  "initialErrors": Object {},
+                  "initialStatus": undefined,
+                  "initialTouched": Object {},
+                  "initialValues": Object {
+                    "addressOne": "",
+                    "addressTwo": "",
+                    "city": "",
+                    "country": "",
+                    "email": "",
+                    "faxNumber": "",
+                    "firstName": "",
+                    "inquiryMedium": "",
+                    "lastName": "",
+                    "organization": "",
+                    "phoneNumber": "",
+                    "state": "",
+                    "surveyOffered": "",
+                    "topicAutoSelect": "",
+                    "topicOfRequest": Array [],
+                    "typeOfInformation": Array [],
+                    "useOfInformation": Array [],
+                    "userType": "",
+                    "zipCode": "",
+                  },
+                  "isSubmitting": false,
+                  "isValid": true,
+                  "isValidating": false,
+                  "registerField": [Function],
+                  "resetForm": [Function],
+                  "setErrors": [Function],
+                  "setFieldError": [Function],
+                  "setFieldTouched": [Function],
+                  "setFieldValue": [Function],
+                  "setFormikState": [Function],
+                  "setStatus": [Function],
+                  "setSubmitting": [Function],
+                  "setTouched": [Function],
+                  "setValues": [Function],
+                  "status": undefined,
+                  "submitCount": 0,
+                  "submitForm": [Function],
+                  "touched": Object {},
+                  "unregisterField": [Function],
+                  "validateField": [Function],
+                  "validateForm": [Function],
+                  "validateOnBlur": true,
+                  "validateOnChange": true,
+                  "validateOnMount": false,
+                  "values": Object {
+                    "addressOne": "",
+                    "addressTwo": "",
+                    "city": "",
+                    "country": "",
+                    "email": "",
+                    "faxNumber": "",
+                    "firstName": "",
+                    "inquiryMedium": "",
+                    "lastName": "",
+                    "organization": "",
+                    "phoneNumber": "",
+                    "state": "",
+                    "surveyOffered": "",
+                    "topicAutoSelect": "",
+                    "topicOfRequest": Array [],
+                    "typeOfInformation": Array [],
+                    "useOfInformation": Array [],
+                    "userType": "",
+                    "zipCode": "",
+                  },
+                }
+              }
+              id="userType-New User"
+              name="userType"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="radio"
+              value="New User"
+            />
+            <span
+              className="margin-right-105"
+            >
+              New User
+            </span>
+          </label>
+        </fieldset>
+      </div>
+    </div>
+    <div
+      className="container"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="row"
+        >
+          <input
+            name="firstName"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="First name*"
+            value=""
+          />
+        </div>
+        <div
+          className="row"
+        >
+          <input
+            name="lastName"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Last name*"
+            value=""
+          />
+        </div>
+        <div
+          className="row"
+        >
+          <input
+            name="email"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Email"
+            value=""
+          />
+        </div>
+        <div
+          className="row"
+        >
+          <input
+            name="organization"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Organization"
+            value=""
+          />
+        </div>
+        <div
+          className="row"
+        >
+          <input
+            name="addressOne"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Street Address 1"
+            value=""
+          />
+        </div>
+        <div
+          className="row"
+        >
+          <input
+            name="addressTwo"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Street Address 2"
+            value=""
+          />
+        </div>
+        <div
+          className="row"
+        >
+          <input
+            name="city"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="City"
+            value=""
+          />
+        </div>
+        <div
+          className="row"
+        >
+          <input
+            name="state"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="State"
+            value=""
+          />
+        </div>
+        <div
+          className="row"
+        >
+          <input
+            name="zipCode"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Zip Code"
+            value=""
+          />
+        </div>
+        <div
+          className="row"
+        >
+          <input
+            name="country"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Country"
+            value=""
+          />
+        </div>
+        <div
+          className="row"
+        >
+          <input
+            name="phoneNumber"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Phone Number"
+            value=""
+          />
+        </div>
+        <div
+          className="row"
+        >
+          <input
+            name="faxNumber"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Fax Number"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div
+    className="cwig-card container"
+  >
+    <div
+      className="row"
+    >
+      <h3>
+        Choose Topics
+      </h3>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="row"
+        >
+          <h4>
+            Topic Medium:
+          </h4>
+        </div>
+        <div
+          className="row"
+        >
+          <div>
+            <fieldset
+              className="no-border no-padding"
+            >
+              <legend />
+              <label
+                className="no-wrap"
+                htmlFor="inquiryMedium-Email"
+              >
+                <input
+                  checked={false}
+                  className="usa-radio margin-right-2"
+                  form={
+                    Object {
+                      "dirty": false,
+                      "errors": Object {},
+                      "getFieldHelpers": [Function],
+                      "getFieldMeta": [Function],
+                      "getFieldProps": [Function],
+                      "handleBlur": [Function],
+                      "handleChange": [Function],
+                      "handleReset": [Function],
+                      "handleSubmit": [Function],
+                      "initialErrors": Object {},
+                      "initialStatus": undefined,
+                      "initialTouched": Object {},
+                      "initialValues": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                      "isSubmitting": false,
+                      "isValid": true,
+                      "isValidating": false,
+                      "registerField": [Function],
+                      "resetForm": [Function],
+                      "setErrors": [Function],
+                      "setFieldError": [Function],
+                      "setFieldTouched": [Function],
+                      "setFieldValue": [Function],
+                      "setFormikState": [Function],
+                      "setStatus": [Function],
+                      "setSubmitting": [Function],
+                      "setTouched": [Function],
+                      "setValues": [Function],
+                      "status": undefined,
+                      "submitCount": 0,
+                      "submitForm": [Function],
+                      "touched": Object {},
+                      "unregisterField": [Function],
+                      "validateField": [Function],
+                      "validateForm": [Function],
+                      "validateOnBlur": true,
+                      "validateOnChange": true,
+                      "validateOnMount": false,
+                      "values": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                    }
+                  }
+                  id="inquiryMedium-Email"
+                  name="inquiryMedium"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="radio"
+                  value="Email"
+                />
+                <span
+                  className="margin-right-105"
+                >
+                  Email
+                </span>
+              </label>
+              <label
+                className="no-wrap"
+                htmlFor="inquiryMedium-Live Chat"
+              >
+                <input
+                  checked={false}
+                  className="usa-radio margin-right-2"
+                  form={
+                    Object {
+                      "dirty": false,
+                      "errors": Object {},
+                      "getFieldHelpers": [Function],
+                      "getFieldMeta": [Function],
+                      "getFieldProps": [Function],
+                      "handleBlur": [Function],
+                      "handleChange": [Function],
+                      "handleReset": [Function],
+                      "handleSubmit": [Function],
+                      "initialErrors": Object {},
+                      "initialStatus": undefined,
+                      "initialTouched": Object {},
+                      "initialValues": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                      "isSubmitting": false,
+                      "isValid": true,
+                      "isValidating": false,
+                      "registerField": [Function],
+                      "resetForm": [Function],
+                      "setErrors": [Function],
+                      "setFieldError": [Function],
+                      "setFieldTouched": [Function],
+                      "setFieldValue": [Function],
+                      "setFormikState": [Function],
+                      "setStatus": [Function],
+                      "setSubmitting": [Function],
+                      "setTouched": [Function],
+                      "setValues": [Function],
+                      "status": undefined,
+                      "submitCount": 0,
+                      "submitForm": [Function],
+                      "touched": Object {},
+                      "unregisterField": [Function],
+                      "validateField": [Function],
+                      "validateForm": [Function],
+                      "validateOnBlur": true,
+                      "validateOnChange": true,
+                      "validateOnMount": false,
+                      "values": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                    }
+                  }
+                  id="inquiryMedium-Live Chat"
+                  name="inquiryMedium"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="radio"
+                  value="Live Chat"
+                />
+                <span
+                  className="margin-right-105"
+                >
+                  Live Chat
+                </span>
+              </label>
+              <label
+                className="no-wrap"
+                htmlFor="inquiryMedium-Phone"
+              >
+                <input
+                  checked={false}
+                  className="usa-radio margin-right-2"
+                  form={
+                    Object {
+                      "dirty": false,
+                      "errors": Object {},
+                      "getFieldHelpers": [Function],
+                      "getFieldMeta": [Function],
+                      "getFieldProps": [Function],
+                      "handleBlur": [Function],
+                      "handleChange": [Function],
+                      "handleReset": [Function],
+                      "handleSubmit": [Function],
+                      "initialErrors": Object {},
+                      "initialStatus": undefined,
+                      "initialTouched": Object {},
+                      "initialValues": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                      "isSubmitting": false,
+                      "isValid": true,
+                      "isValidating": false,
+                      "registerField": [Function],
+                      "resetForm": [Function],
+                      "setErrors": [Function],
+                      "setFieldError": [Function],
+                      "setFieldTouched": [Function],
+                      "setFieldValue": [Function],
+                      "setFormikState": [Function],
+                      "setStatus": [Function],
+                      "setSubmitting": [Function],
+                      "setTouched": [Function],
+                      "setValues": [Function],
+                      "status": undefined,
+                      "submitCount": 0,
+                      "submitForm": [Function],
+                      "touched": Object {},
+                      "unregisterField": [Function],
+                      "validateField": [Function],
+                      "validateForm": [Function],
+                      "validateOnBlur": true,
+                      "validateOnChange": true,
+                      "validateOnMount": false,
+                      "values": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                    }
+                  }
+                  id="inquiryMedium-Phone"
+                  name="inquiryMedium"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="radio"
+                  value="Phone"
+                />
+                <span
+                  className="margin-right-105"
+                >
+                  Phone
+                </span>
+              </label>
+              <label
+                className="no-wrap"
+                htmlFor="inquiryMedium-Voicemail"
+              >
+                <input
+                  checked={false}
+                  className="usa-radio margin-right-2"
+                  form={
+                    Object {
+                      "dirty": false,
+                      "errors": Object {},
+                      "getFieldHelpers": [Function],
+                      "getFieldMeta": [Function],
+                      "getFieldProps": [Function],
+                      "handleBlur": [Function],
+                      "handleChange": [Function],
+                      "handleReset": [Function],
+                      "handleSubmit": [Function],
+                      "initialErrors": Object {},
+                      "initialStatus": undefined,
+                      "initialTouched": Object {},
+                      "initialValues": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                      "isSubmitting": false,
+                      "isValid": true,
+                      "isValidating": false,
+                      "registerField": [Function],
+                      "resetForm": [Function],
+                      "setErrors": [Function],
+                      "setFieldError": [Function],
+                      "setFieldTouched": [Function],
+                      "setFieldValue": [Function],
+                      "setFormikState": [Function],
+                      "setStatus": [Function],
+                      "setSubmitting": [Function],
+                      "setTouched": [Function],
+                      "setValues": [Function],
+                      "status": undefined,
+                      "submitCount": 0,
+                      "submitForm": [Function],
+                      "touched": Object {},
+                      "unregisterField": [Function],
+                      "validateField": [Function],
+                      "validateForm": [Function],
+                      "validateOnBlur": true,
+                      "validateOnChange": true,
+                      "validateOnMount": false,
+                      "values": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                    }
+                  }
+                  id="inquiryMedium-Voicemail"
+                  name="inquiryMedium"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="radio"
+                  value="Voicemail"
+                />
+                <span
+                  className="margin-right-105"
+                >
+                  Voicemail
+                </span>
+              </label>
+              <label
+                className="no-wrap"
+                htmlFor="inquiryMedium-Visitor"
+              >
+                <input
+                  checked={false}
+                  className="usa-radio margin-right-2"
+                  form={
+                    Object {
+                      "dirty": false,
+                      "errors": Object {},
+                      "getFieldHelpers": [Function],
+                      "getFieldMeta": [Function],
+                      "getFieldProps": [Function],
+                      "handleBlur": [Function],
+                      "handleChange": [Function],
+                      "handleReset": [Function],
+                      "handleSubmit": [Function],
+                      "initialErrors": Object {},
+                      "initialStatus": undefined,
+                      "initialTouched": Object {},
+                      "initialValues": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                      "isSubmitting": false,
+                      "isValid": true,
+                      "isValidating": false,
+                      "registerField": [Function],
+                      "resetForm": [Function],
+                      "setErrors": [Function],
+                      "setFieldError": [Function],
+                      "setFieldTouched": [Function],
+                      "setFieldValue": [Function],
+                      "setFormikState": [Function],
+                      "setStatus": [Function],
+                      "setSubmitting": [Function],
+                      "setTouched": [Function],
+                      "setValues": [Function],
+                      "status": undefined,
+                      "submitCount": 0,
+                      "submitForm": [Function],
+                      "touched": Object {},
+                      "unregisterField": [Function],
+                      "validateField": [Function],
+                      "validateForm": [Function],
+                      "validateOnBlur": true,
+                      "validateOnChange": true,
+                      "validateOnMount": false,
+                      "values": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                    }
+                  }
+                  id="inquiryMedium-Visitor"
+                  name="inquiryMedium"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="radio"
+                  value="Visitor"
+                />
+                <span
+                  className="margin-right-105"
+                >
+                  Visitor
+                </span>
+              </label>
+              <label
+                className="no-wrap"
+                htmlFor="inquiryMedium-Website"
+              >
+                <input
+                  checked={false}
+                  className="usa-radio margin-right-2"
+                  form={
+                    Object {
+                      "dirty": false,
+                      "errors": Object {},
+                      "getFieldHelpers": [Function],
+                      "getFieldMeta": [Function],
+                      "getFieldProps": [Function],
+                      "handleBlur": [Function],
+                      "handleChange": [Function],
+                      "handleReset": [Function],
+                      "handleSubmit": [Function],
+                      "initialErrors": Object {},
+                      "initialStatus": undefined,
+                      "initialTouched": Object {},
+                      "initialValues": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                      "isSubmitting": false,
+                      "isValid": true,
+                      "isValidating": false,
+                      "registerField": [Function],
+                      "resetForm": [Function],
+                      "setErrors": [Function],
+                      "setFieldError": [Function],
+                      "setFieldTouched": [Function],
+                      "setFieldValue": [Function],
+                      "setFormikState": [Function],
+                      "setStatus": [Function],
+                      "setSubmitting": [Function],
+                      "setTouched": [Function],
+                      "setValues": [Function],
+                      "status": undefined,
+                      "submitCount": 0,
+                      "submitForm": [Function],
+                      "touched": Object {},
+                      "unregisterField": [Function],
+                      "validateField": [Function],
+                      "validateForm": [Function],
+                      "validateOnBlur": true,
+                      "validateOnChange": true,
+                      "validateOnMount": false,
+                      "values": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                    }
+                  }
+                  id="inquiryMedium-Website"
+                  name="inquiryMedium"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="radio"
+                  value="Website"
+                />
+                <span
+                  className="margin-right-105"
+                >
+                  Website
+                </span>
+              </label>
+              <label
+                className="no-wrap"
+                htmlFor="inquiryMedium-Mail"
+              >
+                <input
+                  checked={false}
+                  className="usa-radio margin-right-2"
+                  form={
+                    Object {
+                      "dirty": false,
+                      "errors": Object {},
+                      "getFieldHelpers": [Function],
+                      "getFieldMeta": [Function],
+                      "getFieldProps": [Function],
+                      "handleBlur": [Function],
+                      "handleChange": [Function],
+                      "handleReset": [Function],
+                      "handleSubmit": [Function],
+                      "initialErrors": Object {},
+                      "initialStatus": undefined,
+                      "initialTouched": Object {},
+                      "initialValues": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                      "isSubmitting": false,
+                      "isValid": true,
+                      "isValidating": false,
+                      "registerField": [Function],
+                      "resetForm": [Function],
+                      "setErrors": [Function],
+                      "setFieldError": [Function],
+                      "setFieldTouched": [Function],
+                      "setFieldValue": [Function],
+                      "setFormikState": [Function],
+                      "setStatus": [Function],
+                      "setSubmitting": [Function],
+                      "setTouched": [Function],
+                      "setValues": [Function],
+                      "status": undefined,
+                      "submitCount": 0,
+                      "submitForm": [Function],
+                      "touched": Object {},
+                      "unregisterField": [Function],
+                      "validateField": [Function],
+                      "validateForm": [Function],
+                      "validateOnBlur": true,
+                      "validateOnChange": true,
+                      "validateOnMount": false,
+                      "values": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                    }
+                  }
+                  id="inquiryMedium-Mail"
+                  name="inquiryMedium"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="radio"
+                  value="Mail"
+                />
+                <span
+                  className="margin-right-105"
+                >
+                  Mail
+                </span>
+              </label>
+              <label
+                className="no-wrap"
+                htmlFor="inquiryMedium-Fax"
+              >
+                <input
+                  checked={false}
+                  className="usa-radio margin-right-2"
+                  form={
+                    Object {
+                      "dirty": false,
+                      "errors": Object {},
+                      "getFieldHelpers": [Function],
+                      "getFieldMeta": [Function],
+                      "getFieldProps": [Function],
+                      "handleBlur": [Function],
+                      "handleChange": [Function],
+                      "handleReset": [Function],
+                      "handleSubmit": [Function],
+                      "initialErrors": Object {},
+                      "initialStatus": undefined,
+                      "initialTouched": Object {},
+                      "initialValues": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                      "isSubmitting": false,
+                      "isValid": true,
+                      "isValidating": false,
+                      "registerField": [Function],
+                      "resetForm": [Function],
+                      "setErrors": [Function],
+                      "setFieldError": [Function],
+                      "setFieldTouched": [Function],
+                      "setFieldValue": [Function],
+                      "setFormikState": [Function],
+                      "setStatus": [Function],
+                      "setSubmitting": [Function],
+                      "setTouched": [Function],
+                      "setValues": [Function],
+                      "status": undefined,
+                      "submitCount": 0,
+                      "submitForm": [Function],
+                      "touched": Object {},
+                      "unregisterField": [Function],
+                      "validateField": [Function],
+                      "validateForm": [Function],
+                      "validateOnBlur": true,
+                      "validateOnChange": true,
+                      "validateOnMount": false,
+                      "values": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                    }
+                  }
+                  id="inquiryMedium-Fax"
+                  name="inquiryMedium"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="radio"
+                  value="Fax"
+                />
+                <span
+                  className="margin-right-105"
+                >
+                  Fax
+                </span>
+              </label>
+              <label
+                className="no-wrap"
+                htmlFor="inquiryMedium-Conference"
+              >
+                <input
+                  checked={false}
+                  className="usa-radio margin-right-2"
+                  form={
+                    Object {
+                      "dirty": false,
+                      "errors": Object {},
+                      "getFieldHelpers": [Function],
+                      "getFieldMeta": [Function],
+                      "getFieldProps": [Function],
+                      "handleBlur": [Function],
+                      "handleChange": [Function],
+                      "handleReset": [Function],
+                      "handleSubmit": [Function],
+                      "initialErrors": Object {},
+                      "initialStatus": undefined,
+                      "initialTouched": Object {},
+                      "initialValues": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                      "isSubmitting": false,
+                      "isValid": true,
+                      "isValidating": false,
+                      "registerField": [Function],
+                      "resetForm": [Function],
+                      "setErrors": [Function],
+                      "setFieldError": [Function],
+                      "setFieldTouched": [Function],
+                      "setFieldValue": [Function],
+                      "setFormikState": [Function],
+                      "setStatus": [Function],
+                      "setSubmitting": [Function],
+                      "setTouched": [Function],
+                      "setValues": [Function],
+                      "status": undefined,
+                      "submitCount": 0,
+                      "submitForm": [Function],
+                      "touched": Object {},
+                      "unregisterField": [Function],
+                      "validateField": [Function],
+                      "validateForm": [Function],
+                      "validateOnBlur": true,
+                      "validateOnChange": true,
+                      "validateOnMount": false,
+                      "values": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                    }
+                  }
+                  id="inquiryMedium-Conference"
+                  name="inquiryMedium"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="radio"
+                  value="Conference"
+                />
+                <span
+                  className="margin-right-105"
+                >
+                  Conference
+                </span>
+              </label>
+              <label
+                className="no-wrap"
+                htmlFor="inquiryMedium-Live Chat - email"
+              >
+                <input
+                  checked={false}
+                  className="usa-radio margin-right-2"
+                  form={
+                    Object {
+                      "dirty": false,
+                      "errors": Object {},
+                      "getFieldHelpers": [Function],
+                      "getFieldMeta": [Function],
+                      "getFieldProps": [Function],
+                      "handleBlur": [Function],
+                      "handleChange": [Function],
+                      "handleReset": [Function],
+                      "handleSubmit": [Function],
+                      "initialErrors": Object {},
+                      "initialStatus": undefined,
+                      "initialTouched": Object {},
+                      "initialValues": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                      "isSubmitting": false,
+                      "isValid": true,
+                      "isValidating": false,
+                      "registerField": [Function],
+                      "resetForm": [Function],
+                      "setErrors": [Function],
+                      "setFieldError": [Function],
+                      "setFieldTouched": [Function],
+                      "setFieldValue": [Function],
+                      "setFormikState": [Function],
+                      "setStatus": [Function],
+                      "setSubmitting": [Function],
+                      "setTouched": [Function],
+                      "setValues": [Function],
+                      "status": undefined,
+                      "submitCount": 0,
+                      "submitForm": [Function],
+                      "touched": Object {},
+                      "unregisterField": [Function],
+                      "validateField": [Function],
+                      "validateForm": [Function],
+                      "validateOnBlur": true,
+                      "validateOnChange": true,
+                      "validateOnMount": false,
+                      "values": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                    }
+                  }
+                  id="inquiryMedium-Live Chat - email"
+                  name="inquiryMedium"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="radio"
+                  value="Live Chat - email"
+                />
+                <span
+                  className="margin-right-105"
+                >
+                  Live Chat - email
+                </span>
+              </label>
+              <label
+                className="no-wrap"
+                htmlFor="inquiryMedium-Social Media"
+              >
+                <input
+                  checked={false}
+                  className="usa-radio margin-right-2"
+                  form={
+                    Object {
+                      "dirty": false,
+                      "errors": Object {},
+                      "getFieldHelpers": [Function],
+                      "getFieldMeta": [Function],
+                      "getFieldProps": [Function],
+                      "handleBlur": [Function],
+                      "handleChange": [Function],
+                      "handleReset": [Function],
+                      "handleSubmit": [Function],
+                      "initialErrors": Object {},
+                      "initialStatus": undefined,
+                      "initialTouched": Object {},
+                      "initialValues": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                      "isSubmitting": false,
+                      "isValid": true,
+                      "isValidating": false,
+                      "registerField": [Function],
+                      "resetForm": [Function],
+                      "setErrors": [Function],
+                      "setFieldError": [Function],
+                      "setFieldTouched": [Function],
+                      "setFieldValue": [Function],
+                      "setFormikState": [Function],
+                      "setStatus": [Function],
+                      "setSubmitting": [Function],
+                      "setTouched": [Function],
+                      "setValues": [Function],
+                      "status": undefined,
+                      "submitCount": 0,
+                      "submitForm": [Function],
+                      "touched": Object {},
+                      "unregisterField": [Function],
+                      "validateField": [Function],
+                      "validateForm": [Function],
+                      "validateOnBlur": true,
+                      "validateOnChange": true,
+                      "validateOnMount": false,
+                      "values": Object {
+                        "addressOne": "",
+                        "addressTwo": "",
+                        "city": "",
+                        "country": "",
+                        "email": "",
+                        "faxNumber": "",
+                        "firstName": "",
+                        "inquiryMedium": "",
+                        "lastName": "",
+                        "organization": "",
+                        "phoneNumber": "",
+                        "state": "",
+                        "surveyOffered": "",
+                        "topicAutoSelect": "",
+                        "topicOfRequest": Array [],
+                        "typeOfInformation": Array [],
+                        "useOfInformation": Array [],
+                        "userType": "",
+                        "zipCode": "",
+                      },
+                    }
+                  }
+                  id="inquiryMedium-Social Media"
+                  name="inquiryMedium"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="radio"
+                  value="Social Media"
+                />
+                <span
+                  className="margin-right-105"
+                >
+                  Social Media
+                </span>
+              </label>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="row"
+        >
+          <h4>
+            Topic of Request:
+          </h4>
+        </div>
+        <div
+          className="row"
+        >
+          <div
+            className="input-field undefined"
+          >
+            <fieldset>
+              <legend />
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="topic-2"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="topic-2"
+                >
+                  Adoption
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="topic-11"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="topic-11"
+                >
+                  Behavioral Health
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="topic-1"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="topic-1"
+                >
+                  Child Abuse and Neglect
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="topic-3"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="topic-3"
+                >
+                  Child Welfare Services and Systems
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="topic-12"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="topic-12"
+                >
+                  Custody
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="topic-9"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="topic-9"
+                >
+                  Family Support and Preservation
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="topic-4"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="topic-4"
+                >
+                  Family-Centered Practice
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="topic-10"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="topic-10"
+                >
+                  Kinship Care
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="topic-5"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="topic-5"
+                >
+                  Other
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="topic-6"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="topic-6"
+                >
+                  Out-of-Home Care/Foster Care
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="topic-7"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="topic-7"
+                >
+                  Permanency for Children and Youth
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="topic-8"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="topic-8"
+                >
+                  Prevention
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="topic-13"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="topic-13"
+                >
+                  Trending Issue
+                </label>
+              </span>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="row"
+        >
+          <h4>
+            Use of Information:
+          </h4>
+        </div>
+        <div
+          className="row"
+        >
+          <div
+            className="input-field undefined"
+          >
+            <fieldset>
+              <legend />
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationUse-12"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationUse-12"
+                >
+                  Advocacy
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationUse-1"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationUse-1"
+                >
+                  Fundraising/Grant Writing
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationUse-2"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationUse-2"
+                >
+                  Other
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationUse-3"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationUse-3"
+                >
+                  Personal Use
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationUse-4"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationUse-4"
+                >
+                  Policy Development
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationUse-5"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationUse-5"
+                >
+                  Professional Development
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationUse-6"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationUse-6"
+                >
+                  Program Improvement
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationUse-7"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationUse-7"
+                >
+                  Provide Information for Families
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationUse-8"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationUse-8"
+                >
+                  Public Awareness
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationUse-11"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationUse-11"
+                >
+                  Reporting
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationUse-9"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationUse-9"
+                >
+                  Research
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationUse-13"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationUse-13"
+                >
+                  School Project
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationUse-10"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationUse-10"
+                >
+                  Service Delivery
+                </label>
+              </span>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="row"
+        >
+          <h4>
+            Type of Information:
+          </h4>
+        </div>
+        <div
+          className="row"
+        >
+          <div
+            className="input-field undefined"
+          >
+            <fieldset>
+              <legend />
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationType-13"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationType-13"
+                >
+                  Complaint Resources
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationType-1"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationType-1"
+                >
+                  Evidence-based Practice
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationType-2"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationType-2"
+                >
+                  Family Assistance
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationType-3"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationType-3"
+                >
+                  Funding Information
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationType-4"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationType-4"
+                >
+                  General Information
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationType-5"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationType-5"
+                >
+                  Legal Issues/Laws
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationType-6"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationType-6"
+                >
+                  Other
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationType-7"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationType-7"
+                >
+                  Personal Help
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationType-8"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationType-8"
+                >
+                  Professional Literature
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationType-9"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationType-9"
+                >
+                  State-specific Information
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationType-10"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationType-10"
+                >
+                  Statistics
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationType-11"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationType-11"
+                >
+                  Training/Education Information
+                </label>
+              </span>
+              <span>
+                <input
+                  checked={false}
+                  className=""
+                  id="informationType-12"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  value={false}
+                />
+                <label
+                  className=""
+                  htmlFor="informationType-12"
+                >
+                  Website/Linking/Issues
+                </label>
+              </span>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div
+    className="cwig-card container"
+  >
+    <div
+      className="row"
+    >
+      <h3>
+        Survey Information
+      </h3>
+    </div>
+    <div
+      className="row"
+    >
+      <label>
+        Was a survey offered?
+      </label>
+    </div>
+    <div
+      className="row"
+    >
+      <div>
+        <fieldset
+          className="no-border no-padding"
+        >
+          <legend />
+          <label
+            className="no-wrap"
+            htmlFor="surveyOffered-Yes"
+          >
+            <input
+              checked={false}
+              className="usa-radio margin-right-2"
+              form={
+                Object {
+                  "dirty": false,
+                  "errors": Object {},
+                  "getFieldHelpers": [Function],
+                  "getFieldMeta": [Function],
+                  "getFieldProps": [Function],
+                  "handleBlur": [Function],
+                  "handleChange": [Function],
+                  "handleReset": [Function],
+                  "handleSubmit": [Function],
+                  "initialErrors": Object {},
+                  "initialStatus": undefined,
+                  "initialTouched": Object {},
+                  "initialValues": Object {
+                    "addressOne": "",
+                    "addressTwo": "",
+                    "city": "",
+                    "country": "",
+                    "email": "",
+                    "faxNumber": "",
+                    "firstName": "",
+                    "inquiryMedium": "",
+                    "lastName": "",
+                    "organization": "",
+                    "phoneNumber": "",
+                    "state": "",
+                    "surveyOffered": "",
+                    "topicAutoSelect": "",
+                    "topicOfRequest": Array [],
+                    "typeOfInformation": Array [],
+                    "useOfInformation": Array [],
+                    "userType": "",
+                    "zipCode": "",
+                  },
+                  "isSubmitting": false,
+                  "isValid": true,
+                  "isValidating": false,
+                  "registerField": [Function],
+                  "resetForm": [Function],
+                  "setErrors": [Function],
+                  "setFieldError": [Function],
+                  "setFieldTouched": [Function],
+                  "setFieldValue": [Function],
+                  "setFormikState": [Function],
+                  "setStatus": [Function],
+                  "setSubmitting": [Function],
+                  "setTouched": [Function],
+                  "setValues": [Function],
+                  "status": undefined,
+                  "submitCount": 0,
+                  "submitForm": [Function],
+                  "touched": Object {},
+                  "unregisterField": [Function],
+                  "validateField": [Function],
+                  "validateForm": [Function],
+                  "validateOnBlur": true,
+                  "validateOnChange": true,
+                  "validateOnMount": false,
+                  "values": Object {
+                    "addressOne": "",
+                    "addressTwo": "",
+                    "city": "",
+                    "country": "",
+                    "email": "",
+                    "faxNumber": "",
+                    "firstName": "",
+                    "inquiryMedium": "",
+                    "lastName": "",
+                    "organization": "",
+                    "phoneNumber": "",
+                    "state": "",
+                    "surveyOffered": "",
+                    "topicAutoSelect": "",
+                    "topicOfRequest": Array [],
+                    "typeOfInformation": Array [],
+                    "useOfInformation": Array [],
+                    "userType": "",
+                    "zipCode": "",
+                  },
+                }
+              }
+              id="surveyOffered-Yes"
+              name="surveyOffered"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="radio"
+              value="Yes"
+            />
+            <span
+              className="margin-right-105"
+            >
+              Yes
+            </span>
+          </label>
+          <label
+            className="no-wrap"
+            htmlFor="surveyOffered-No"
+          >
+            <input
+              checked={false}
+              className="usa-radio margin-right-2"
+              form={
+                Object {
+                  "dirty": false,
+                  "errors": Object {},
+                  "getFieldHelpers": [Function],
+                  "getFieldMeta": [Function],
+                  "getFieldProps": [Function],
+                  "handleBlur": [Function],
+                  "handleChange": [Function],
+                  "handleReset": [Function],
+                  "handleSubmit": [Function],
+                  "initialErrors": Object {},
+                  "initialStatus": undefined,
+                  "initialTouched": Object {},
+                  "initialValues": Object {
+                    "addressOne": "",
+                    "addressTwo": "",
+                    "city": "",
+                    "country": "",
+                    "email": "",
+                    "faxNumber": "",
+                    "firstName": "",
+                    "inquiryMedium": "",
+                    "lastName": "",
+                    "organization": "",
+                    "phoneNumber": "",
+                    "state": "",
+                    "surveyOffered": "",
+                    "topicAutoSelect": "",
+                    "topicOfRequest": Array [],
+                    "typeOfInformation": Array [],
+                    "useOfInformation": Array [],
+                    "userType": "",
+                    "zipCode": "",
+                  },
+                  "isSubmitting": false,
+                  "isValid": true,
+                  "isValidating": false,
+                  "registerField": [Function],
+                  "resetForm": [Function],
+                  "setErrors": [Function],
+                  "setFieldError": [Function],
+                  "setFieldTouched": [Function],
+                  "setFieldValue": [Function],
+                  "setFormikState": [Function],
+                  "setStatus": [Function],
+                  "setSubmitting": [Function],
+                  "setTouched": [Function],
+                  "setValues": [Function],
+                  "status": undefined,
+                  "submitCount": 0,
+                  "submitForm": [Function],
+                  "touched": Object {},
+                  "unregisterField": [Function],
+                  "validateField": [Function],
+                  "validateForm": [Function],
+                  "validateOnBlur": true,
+                  "validateOnChange": true,
+                  "validateOnMount": false,
+                  "values": Object {
+                    "addressOne": "",
+                    "addressTwo": "",
+                    "city": "",
+                    "country": "",
+                    "email": "",
+                    "faxNumber": "",
+                    "firstName": "",
+                    "inquiryMedium": "",
+                    "lastName": "",
+                    "organization": "",
+                    "phoneNumber": "",
+                    "state": "",
+                    "surveyOffered": "",
+                    "topicAutoSelect": "",
+                    "topicOfRequest": Array [],
+                    "typeOfInformation": Array [],
+                    "useOfInformation": Array [],
+                    "userType": "",
+                    "zipCode": "",
+                  },
+                }
+              }
+              id="surveyOffered-No"
+              name="surveyOffered"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="radio"
+              value="No"
+            />
+            <span
+              className="margin-right-105"
+            >
+              No
+            </span>
+          </label>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+  <button
+    className="btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Create New Inquiry
+  </button>
+</form>
+`;

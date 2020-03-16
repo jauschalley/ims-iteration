@@ -1,0 +1,16 @@
+.sidebar-wrapper {
+  position: sticky;
+  top: 5.5rem;
+  z-index: 1000;
+  height: calc(100vh - 4rem);
+  background-color: $lightgray;
+  border-right: 1px solid #ececec;
+  .sidebar-link {
+    color: $darkgray;
+    transition: color .2s ease-out;
+    &:hover {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

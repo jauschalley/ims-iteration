@@ -1,0 +1,5513 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchItems /> renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="row"
+  >
+    <h1>
+      Search Items
+    </h1>
+  </div>
+  <form
+    className=""
+  >
+    <div
+      className="cwig-card container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-md-4"
+        >
+          <label
+            className="form-label"
+          >
+            SKU
+          </label>
+          <input
+            name="sku"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="sku"
+            value=""
+          />
+        </div>
+        <div
+          className="col-md-4"
+        >
+          <label
+            className="form-label"
+          >
+            Title
+          </label>
+          <input
+            name="title"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Title"
+            value=""
+          />
+        </div>
+        <div
+          className="col-md-4"
+        >
+          <label
+            className="form-label"
+          >
+            Keyword
+          </label>
+          <input
+            name="keyword"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Keyword"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col-md-4"
+        >
+          <label
+            className="form-label"
+          >
+            Inventory Type
+          </label>
+          <select
+            name="typeOfInventory"
+            onBlur={[Function]}
+            onChange={[Function]}
+            value=""
+          >
+            <option
+              value={2}
+            >
+              Administrative Item
+            </option>
+            <option
+              value={1}
+            >
+              Conference Only Item
+            </option>
+            <option
+              value={3}
+            >
+              Publication Item
+            </option>
+          </select>
+        </div>
+        <div
+          className="col-md-4"
+        >
+          <label
+            className="form-label"
+          >
+            Publication Format
+          </label>
+          <select
+            name="pulbicationFormat"
+            onBlur={[Function]}
+            onChange={[Function]}
+          >
+            <option
+              value={1}
+            >
+              Bound
+            </option>
+            <option
+              value={2}
+            >
+              Unbound
+            </option>
+            <option
+              value={5}
+            >
+              CD-ROM
+            </option>
+            <option
+              value={6}
+            >
+              Audio Visual
+            </option>
+            <option
+              value={7}
+            >
+              Poster
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div
+    className="MuiPaper-root MuiTableContainer-root MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <table
+      aria-label="search customers table"
+      className="MuiTable-root"
+    >
+      <thead
+        className="MuiTableHead-root"
+      >
+        <tr
+          className="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            SKU
+          </th>
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Title
+          </th>
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Onsite Quantity
+          </th>
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            Available Quantity
+          </th>
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            PDF
+          </th>
+          <th
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-head"
+            scope="col"
+          >
+            HTML
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className="MuiTableBody-root"
+      >
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-00-10084-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Crisis Intervention in Child Abuse and Neglect
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            94
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            694
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/crisis/crisis.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/pubs/usermanuals/crisis/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-00-10084-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Crisis Intervention in Child Abuse and Neglect
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            88
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            694
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/crisis/crisis.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/pubs/usermanuals/crisis/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10111-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Third National Incidence Study of Child Abuse and Neglect.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            58
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            4136
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10111-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Third National Incidence Study of Child Abuse and Neglect.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            125
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            4136
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-00-10034-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            The Role of Mental Health Professionals in the Prevention and Treatment of Child Abuse and Neglect
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            4
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            4
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/menthlth/mentlhlth.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/pubs/usermanuals/menthlth/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-00-10034-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            The Role of Mental Health Professionals in the Prevention and Treatment of Child Abuse and Neglect
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            140
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            4
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/menthlth/mentlhlth.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/pubs/usermanuals/menthlth/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-00-10065-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Treatment for Abused and Neglected Children: Infancy to Age 18
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/treatmen/treatmen.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/pubs/usermanuals/treatmen/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-00-10065-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Treatment for Abused and Neglected Children: Infancy to Age 18
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            70
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/treatmen/treatmen.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/pubs/usermanuals/treatmen/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-00-10060-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Protecting Children in Substance-Abusing Families
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/subabuse/subabuse.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/subabuse/index.cfm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10247-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Executive Summary of Effective Intervention in Domestic Violence and Child Maltreatment Cases: Guidelines for Policy and Practice. Recommendations From the National Council of Juvenile and Family Court Judges Family Violence Department.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.ncjfcj.org/sites/default/files/effective_int_exec_summary.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10231-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1999 Child Welfare Training Symposium:  Changing Paradigms of Child Welfare Practice:  Responding to Opportunities and Challenges
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            41
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            261
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10231-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1999 Child Welfare Training Symposium:  Changing Paradigms of Child Welfare Practice:  Responding to Opportunities and Challenges
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            261
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10246-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Effective Intervention in Domestic Violence and Child Maltreatment Cases: Guidelines for Policy and Practice.  Recommendations from the National Council of Juvenile and Family Court Judges Family Violence Department
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/otherpubs/ncjfcj.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10321-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Foundations for Success:  Strengthening Your Agency Attorney Office.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10250-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Child Abuse and Neglect: An Examination of American Indian Data
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.nicwa.org/policy/research/2000/CAN_2000.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10245-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            National Evaluation of Family Support Programs Volume A:  The Meta-Analysis
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            5
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            5
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.acf.hhs.gov/programs/opre/abuse_neglect/fam_sup/reports/famsup/fam_sup_vol_a.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10258-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            The Child Welfare-Substance Abuse Connection:  A Compendium of Training Curricula and Resources
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            3
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            3
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10257-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Emerging Practices in the Prevention of Child Abuse and Neglect
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/preventing/programs/whatworks/report/report.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/preventing/programs/whatworks/report/report.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10257-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Emerging Practices in the Prevention of Child Abuse and Neglect
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/preventing/programs/whatworks/report/report.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/preventing/programs/whatworks/report/report.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10261-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Realidades Ocultas: Para Brindar Apoyo a Quienes Viven Situaciones Violentas: Los Ni&ntilde;os Peque&ntilde;os y Sus Familias
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            116
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            116
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://web.archive.org/web/20060209152422/http://cwresource.org/Online+publications/SilentRealititesSpan.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10256-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            A Coordinated Response to Child Abuse and Neglect: The Foundation for Practice
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubPDFs/foundation.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/pubs/usermanuals/foundation"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10265-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Child Protective Services: A Guide for Caseworkers 2003
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            -26
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            2517
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/cps/cps.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/pubs/usermanuals/cps/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10265-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Child Protective Services: A Guide for Caseworkers 2003
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            144
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            2517
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/cps/cps.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/pubs/usermanuals/cps/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-AJ-0020A-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Adopted Children and Stepchildren: 2000.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            12
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            762
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.census.gov/prod/2003pubs/censr-6.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-AJ-0020A-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Adopted Children and Stepchildren: 2000.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            762
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.census.gov/prod/2003pubs/censr-6.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10268-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            National Study of Child Protective Services Systems and Reform Efforts: Findings on Local CPS Practices
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            162
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1184
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/CPS-status03/CPS-practices03/index.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10268-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            National Study of Child Protective Services Systems and Reform Efforts: Findings on Local CPS Practices
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            143
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1184
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/CPS-status03/CPS-practices03/index.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10270-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            National Study of Child Protective Services Systems and Reform Efforts: A Summary Report
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            133
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            883
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/CPS-status03/summary/index.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10270-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            National Study of Child Protective Services Systems and Reform Efforts: A Summary Report
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            132
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            883
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/CPS-status03/summary/index.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10269-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            A Call to Action: Ending Crimes of Violence Against Children and Adults with Disabilities.  A Report to the Nation.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            5
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            5
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-28-10018-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Gateways to Prevention: What Everyone Can Do to Prevent Child Abuse. Child Abuse Prevention Community Resource Packet, Second Edition.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/2004guide.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-11-11251-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Grants.gov : one site, every grant opportunity / Department of Health and Human Services
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            626
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            626
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-11-11251-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Grants.gov : one site, every grant opportunity / Department of Health and Human Services
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            820
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            626
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10272-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Que Podemos Hacer Todos Para Prevenir el Maltrato de Menores: Paquete de Recursos para la Prevenci&oacute;n del Maltrato de Menores 2004. 2da edici&oacute;n. [Gateways to Prevention]
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/preventing/pdfs/spanpacket2004.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10277-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Foster Our Future: May is National Foster Care Month.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            687
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            687
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10279-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Child Protection in Families Experiencing Domestic Violence
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            2
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            2
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/domesticviolence/domesticviolence2003.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/domesticviolence/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10281-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            The Role of Educators in Preventing and Responding to Child Abuse and Neglect
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            2
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            2
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/educator/educator.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/pubs/usermanuals/educator/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10281-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            The Role of Educators in Preventing and Responding to Child Abuse and Neglect
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            10
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            2
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/educator/educator.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/pubs/usermanuals/educator/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10282-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Promising Results, Potential New Directions: International FGDM Research and Evaluation in Child Welfare
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            130
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1234
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10282-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Promising Results, Potential New Directions: International FGDM Research and Evaluation in Child Welfare
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            301
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1234
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10322-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            How to work with your court : a guide for child welfare agency administrators. 2nd ed.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            3
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10322-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            How to work with your court : a guide for child welfare agency administrators. 2nd ed.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            183
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10293-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Understanding Adoption Subsidies: An Analysis of AFCARS Data. Final Report.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/adoption-subsidies/report.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/adoption-subsidies/index.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10292-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Understanding Substance Abuse and Facilitating Recovery: A Guide for Child Welfare Workers
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.ncsacw.samhsa.gov/files/UnderstandingSAGuide.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10292-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Understanding Substance Abuse and Facilitating Recovery: A Guide for Child Welfare Workers
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.ncsacw.samhsa.gov/files/UnderstandingSAGuide.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10294-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Male Perpetrators of Child Maltreatment: Findings from NCANDS
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/child-maltreat/report.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/child-maltreat"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10294-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Male Perpetrators of Child Maltreatment: Findings from NCANDS
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/child-maltreat/report.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/child-maltreat"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10296-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Understanding Foster Parenting: Using Administrative Data to Explore Retention. Final Report.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            49
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            766
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/foster-parenting/report.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/foster-parenting/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10296-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Understanding Foster Parenting: Using Administrative Data to Explore Retention. Final Report.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            766
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/foster-parenting/report.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/foster-parenting/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10300-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Synthesis of Findings : Substance Abuse Child Welfare Waiver Demonstrations.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            267
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            3067
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.acf.hhs.gov/programs/cb/programs_fund/cwwaiver/substanceabuse/index.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10300-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Synthesis of Findings : Substance Abuse Child Welfare Waiver Demonstrations.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            3067
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.acf.hhs.gov/programs/cb/programs_fund/cwwaiver/substanceabuse/index.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10299-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Synthesis of Findings : Assisted Guardianship Child Welfare Waiver Demonstrations.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            -3
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            3295
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.acf.hhs.gov/programs/cb/programs_fund/cwwaiver/agissue/index.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10299-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Synthesis of Findings : Assisted Guardianship Child Welfare Waiver Demonstrations.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            3295
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.acf.hhs.gov/programs/cb/programs_fund/cwwaiver/agissue/index.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10298-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Synthesis of Findings : Title IV-E Flexible Funding Child Welfare Waiver Demonstrations.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            301
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            301
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.acf.hhs.gov/programs/cb/programs_fund/cwwaiver/flexfund/index.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10298-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Synthesis of Findings : Title IV-E Flexible Funding Child Welfare Waiver Demonstrations.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            311
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            301
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.acf.hhs.gov/programs/cb/programs_fund/cwwaiver/flexfund/index.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10301-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Alternative Responses to Child Maltreatment : Findings from NCANDS
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/child-maltreat-resp/report.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/child-maltreat-resp/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10301-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Alternative Responses to Child Maltreatment : Findings from NCANDS
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/child-maltreat-resp/report.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/child-maltreat-resp/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10302-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Rereporting and Recurrence of Child Maltreatment : Findings from NCANDS
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            64
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            178
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/child%2Dmaltreat%2Drereporting/report.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/child%2Dmaltreat%2Drereporting/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10302-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Rereporting and Recurrence of Child Maltreatment : Findings from NCANDS
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            281
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            178
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/child%2Dmaltreat%2Drereporting/report.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/05/child%2Dmaltreat%2Drereporting/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10303-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Differential Response in Child Welfare.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.americanhumane.org/assets/pdfs/children/differential-response/pc-20-2-3pdf.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10303-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Differential Response in Child Welfare.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.americanhumane.org/assets/pdfs/children/differential-response/pc-20-2-3pdf.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10314-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Child maltreatment and substance abuse : research guiding practice.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-32-10058-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Child Maltreatment 2004
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.acf.hhs.gov/programs/cb/pubs/cm04/cm04.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.acf.hhs.gov/programs/cb/pubs/cm04/index.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10305-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            What About the Dads? Child Welfare Agencies' Efforts to Identify, Locate, and Involve Nonresident Fathers
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            2
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/06/CW-involve-dads/report.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/06/CW-involve-dads/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-25-10231-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Child Welfare Outcomes 2003 : Executive Summary (Includes CD-ROM)
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            7
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            7
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10306-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            The Children's Bureau
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            2636
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            2636
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10306-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            The Children's Bureau
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            2636
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10307-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Child Neglect: A Guide for Prevention, Assessment and Intervention
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/neglect/neglect.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/pubs/usermanuals/neglect/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10308-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Working with the Courts in Child Protection
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/courts/courts.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/courts/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10309-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Healthy Marriage Initiative : Building Real Solutions for Real People
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            10
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            10
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://peerta.acf.hhs.gov/pdf/Healthy_Marriage_Brochure.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10280-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Supervising Child Protective Services Caseworkers
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            -37
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            275
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/supercps/supercps.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/supercps/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10280-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Supervising Child Protective Services Caseworkers
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            75
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            275
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/supercps/supercps.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/supercps/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10304-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            The Importance of Fathers in the Healthy Development of Children
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/fatherhood/fatherhood.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/usermanuals/fatherhood/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-31-02013-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Promueva la salud familiar en su comunidad [póster] (Promoting Healthy Families in Your Community [poster])
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            -2
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            -2
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubs/res_packet_2007/packet_poster.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10310-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Screening and Assessment for Family Engagement, Retention and Recovery (SAFERR)
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            -26
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1257
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://web.archive.org/web/20140814161701/http://store.samhsa.gov/shin/content//SMA08-4261/SMA08-4261.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://web.archive.org/web/20140814161701/http://store.samhsa.gov/shin/content//SMA08-4261/SMA08-4261.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10310-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Screening and Assessment for Family Engagement, Retention and Recovery (SAFERR)
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            109
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1257
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://web.archive.org/web/20140814161701/http://store.samhsa.gov/shin/content//SMA08-4261/SMA08-4261.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://web.archive.org/web/20140814161701/http://store.samhsa.gov/shin/content//SMA08-4261/SMA08-4261.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10313-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Child Welfare Casework With Nonresident Fathers of Children in Foster Care
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            2
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            2
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/06/CW-involve-dads/ib.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/06/CW-involve-dads/ib.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-21-10244-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            2007 Kids Count Data Book: State Profiles of Child Well-Being: Lifelong Family Connections: Supporting Permanence for Children in Foster Care.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            10
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            10
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.aecf.org/~/media/Pubs/Topics/Child%20Welfare%20Permanence/Permanence/2007KIDSCOUNTDataBookStateProfilesofChildWell/databook_2007.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.aecf.org/KnowledgeCenter/Publications.aspx?pubguid={4592AE36-DB63-4D5E-B858-E05BFFCD24BF}"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-21-10244-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            2007 Kids Count Data Book: State Profiles of Child Well-Being: Lifelong Family Connections: Supporting Permanence for Children in Foster Care.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            81
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            10
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.aecf.org/~/media/Pubs/Topics/Child%20Welfare%20Permanence/Permanence/2007KIDSCOUNTDataBookStateProfilesofChildWell/databook_2007.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.aecf.org/KnowledgeCenter/Publications.aspx?pubguid={4592AE36-DB63-4D5E-B858-E05BFFCD24BF}"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-32-10018-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Promoting Healthy Families in Your Community: 2008 Resource Packet
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            10
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            10
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.childwelfare.gov/pubPDFs/packet.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10316-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Improving Child Welfare Outcomes Through Systems of Care : Building the Infrastructure, a Guide for Communities.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            3
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            3
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.tapartnership.org/docs/improvingChildWelfareThroughSOC.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10316-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Improving Child Welfare Outcomes Through Systems of Care : Building the Infrastructure, a Guide for Communities.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            3
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.tapartnership.org/docs/improvingChildWelfareThroughSOC.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-34-10058-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Child Maltreatment 2006
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            30
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            89
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.acf.hhs.gov/programs/cb/pubs/cm06/cm06.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.acf.hhs.gov/programs/cb/pubs/cm06/index.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-34-10058-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Child Maltreatment 2006
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            89
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.acf.hhs.gov/programs/cb/pubs/cm06/cm06.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.acf.hhs.gov/programs/cb/pubs/cm06/index.htm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10320-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Coming of Age: Employment Outcomes for Youth Who Age Out of Foster Care Through Their Middle Twenties.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/08/fosteremp/report.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/08/fosteremp/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10318-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Exploring Differential Response: One Pathway Toward Reforming Child Welfare.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            110
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1352
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.americanhumane.org/assets/pdfs/children/protecting-children-journal/pc-23-1-2.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10318-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Exploring Differential Response: One Pathway Toward Reforming Child Welfare.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            147
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1352
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.americanhumane.org/assets/pdfs/children/protecting-children-journal/pc-23-1-2.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-88-10001-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Memory sticks for distribution at conferences
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            801
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            795
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-33-10018-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Strengthening Families and Communities: 2009 Resource Guide
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/pubs/2009guide.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-33-10018-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Strengthening Families and Communities: 2009 Resource Guide
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/pubs/2009guide.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10323-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Court Performance Measures in Child Abuse and Neglect Cases: Assessment Guide.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.ncjrs.gov/pdffiles1/ojjdp/223571.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10324-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Court Performance Measures in Child Abuse and Neglect Cases: Implementation Guide.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.ncjrs.gov/pdffiles1/ojjdp/223568.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10325-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Court Performance Measures in Child Abuse and Neglect Cases: Technical Guide.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.ncjrs.gov/pdffiles1/ojjdp/223570.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10326-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Court Performance Measures in Child Abuse and Neglect Cases: User's Guide.
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            0
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.ncjrs.gov/pdffiles1/ojjdp/223569.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-34-10018-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Strengthening Families and Communities: 2010 Resource Guide
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            224
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            224
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/pubs/2010guide.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-34-10018-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Strengthening Families and Communities: 2010 Resource Guide
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            224
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="https://www.childwelfare.gov/pubs/2010guide.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10329-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Adoption USA: A Chartbook Based on the 2007 National Survey of Adoptive Parents
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            249
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1598
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/09/NSAP/chartbook/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10329-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Adoption USA: A Chartbook Based on the 2007 National Survey of Adoptive Parents
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            264
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            1598
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://aspe.hhs.gov/hsp/09/NSAP/chartbook/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10330-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Substance-Exposed Infants: State Responses to the Problem
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            -7
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            -7
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.ncsacw.samhsa.gov/files/Substance-Exposed-Infants.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+        <tr
+          className="MuiTableRow-root"
+        >
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            XPCN-20-10330-BD
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            Substance-Exposed Infants: State Responses to the Problem
+             
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            107
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            -7
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href="http://www.ncsacw.samhsa.gov/files/Substance-Exposed-Infants.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              PDF
+            </a>
+          </td>
+          <td
+            aria-sort={null}
+            className="MuiTableCell-root MuiTableCell-body"
+          >
+            <a
+              href=""
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HTML
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

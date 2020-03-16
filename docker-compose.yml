@@ -1,0 +1,14 @@
+version: '3'
+services:
+  ims-react:
+    container_name: ims-react
+    build:
+      context: ./ims-react
+      dockerfile: Dockerfile
+    volumes:
+      - './ims-react:/app'
+      - '/ims-react/node_modules'
+    ports:
+      - '3001:3000'
+    environment:
+      - NODE_ENV=development

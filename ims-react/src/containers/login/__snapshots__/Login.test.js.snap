@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Login /> renders correctly 1`] = `
+<div
+  className="login text-align-left container-fluid"
+>
+  <div
+    className="col-md-4"
+  >
+    <h1>
+      Login
+    </h1>
+    <form
+      className=""
+    >
+      <div
+        className="row"
+      >
+        <label
+          className="form-label"
+        >
+          Email:
+        </label>
+        <input
+          id="email"
+          name="email"
+          onBlur={[Function]}
+          onChange={[Function]}
+          required={true}
+          type="email"
+          value=""
+        />
+      </div>
+      <div
+        className="row"
+      >
+        <label
+          className="form-label"
+        >
+          Password:
+        </label>
+        <input
+          id="password"
+          name="password"
+          onBlur={[Function]}
+          onChange={[Function]}
+          required={true}
+          type="password"
+          value=""
+        />
+      </div>
+      <div
+        className="row"
+      >
+        <button
+          className="btn btn-primary"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Login
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

@@ -1,0 +1,13 @@
+div.header {
+  background-color: $darkgray;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 1040;
+  .navbar-brand {
+    color: $lightgray;
+  }
+  .nav-link {
+    margin-left: 2em;
+  }
+}

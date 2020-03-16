@@ -1,0 +1,41 @@
+{
+  "testmode": "0",
+  "customers": [
+      {
+          "zip": "",
+          "customerRole": "Child Welfare in Public Agency",
+          "phone": "",
+          "comments": "",
+          "state": "West Virginia",
+          "firstName": "",
+          "email": "",
+          "customerType": "Professional",
+          "isAnonymous": 1,
+          "organization": "",
+          "customerID": 98486,
+          "country": "United States of America",
+          "lastName": "",
+          "languageID": "en",
+          "addressID": 113847,
+          "phoneExtension": "",
+          "address1": "",
+          "address2": "",
+          "language": "English",
+          "postalCode": "",
+          "orgTypeID": 16,
+          "customerRoleID": 48,
+          "countryID": 121,
+          "regionOfficeID": 3,
+          "regionOffice": "Region 3 - Philadelphia",
+          "state_abbr": "WV",
+          "customerTypeID": 1,
+          "city": "",
+          "organizationTypeID": "Public Agency",
+          "province": "",
+          "stateID": 56,
+          "fax": ""
+      }
+  ],
+  "status_code": "200",
+  "status_text": ""
+}

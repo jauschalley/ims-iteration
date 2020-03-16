@@ -1,0 +1,70 @@
+{
+  "testmode": "0",
+  "inquiry": {
+      "inquiryComments": "",
+      "isStatusClosed": "1",
+      "adminCloseNotes": "",
+      "surveyReason": "Request not on a survey day",
+      "surveyTypeID": 0,
+      "statusChangeDate": "July, 09 2019 00:00:00",
+      "inquiryDate": "2019-07-09",
+      "assignedByID": 85,
+      "assignedToDate": "July, 09 2019 00:00:00",
+      "otherInformationUse": "",
+      "isAnonymous": 1,
+      "orderID": 0,
+      "wasSurveyOffered": "0",
+      "customerID": 98371,
+      "otherSurveyReason": "",
+      "isAdminClosed": 0,
+      "informationUses": [
+          {
+              "informationUseID": 3,
+              "inquiryID": 54530,
+              "informationUse": "Personal Use"
+          }
+      ],
+      "assignedTo": "Isabelle Clark",
+      "surveyType": "",
+      "medium": "Voicemail",
+      "otherInformationType": "",
+      "topicsOfRequest": [
+          {
+              "topicID": 6,
+              "topic": "Out-of-Home Care/Foster Care",
+              "inquiryID": 54530
+          }
+      ],
+      "otherTopic": "",
+      "inquiryID": 54530,
+      "mediumID": 3,
+      "responses": [
+          {
+              "responseID": 54155,
+              "responseDate": "July, 09 2019 00:00:00",
+              "responder": "Isabelle Clark",
+              "responderID": 85,
+              "responseDetails": "",
+              "methodID": 1,
+              "method": "Phone",
+              "inquiryID": 54530,
+              "outOfScopeExplanation": ""
+          }
+      ],
+      "surveyReasonID": 4,
+      "assignedBy": "Isabelle Clark",
+      "assignedToID": 85,
+      "assignmentNotes": "",
+      "orderStatusID": 0,
+      "orderStatus": "",
+      "informationTypes": [
+          {
+              "informationType": "General Information",
+              "inquiryID": 54530,
+              "informationTypeID": 4
+          }
+      ]
+  },
+  "status_code": "200",
+  "status_text": ""
+}

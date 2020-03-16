@@ -1,0 +1,11 @@
+@import 'base';
+@import 'colors';
+@import 'header';
+@import 'sidebar';
+@import '../components/all';
+
+
+.btn-primary {
+  background-color: $primary-button-color;
+  border-color: $primary-button-color;
+}

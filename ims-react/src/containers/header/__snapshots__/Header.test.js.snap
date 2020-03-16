@@ -5,7 +5,7 @@ exports[`<Header /> renders correctly 1`] = `
   className="header container-fluid sticky"
 >
   <nav
-    className="navbar navbar-expand-lg navbar-dark bg-dark"
+    className="navbar navbar-expand-lg navbar-dark"
   >
     <a
       className="navbar-brand"

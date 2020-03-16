@@ -6,9 +6,9 @@ import RadioButtonGroup from '../../../../components/RadioButtonGroup';
 import {CheckboxGroup, Checkbox} from '../../../../components/CheckboxGroup';
 import SelectableSearchCustomers from '../../../../components/SelectableCustomerSearch';
 
-const mapSelectOptions = (options, labelKey, idKey) => (
+const mapSelectOptions = (options, labelKey, idKey) => console.log(options, labelKey)  || (
   options.map((option) => (
-    <option value={option[idKey]}>
+    <option value={option[idKey]} key={option[idKey]}>
       {option[labelKey]}
     </option>
   ))

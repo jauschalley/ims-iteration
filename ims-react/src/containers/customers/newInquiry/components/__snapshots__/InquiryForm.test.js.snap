@@ -101,7 +101,6 @@ exports[`<InquiryForm /> renders correctly 1`] = `
       </select>
     </div>
   </div>
-  <br />
   <div
     className="cwig-card container"
   >
@@ -121,12 +120,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
         >
           <legend />
           <label
-            className="no-wrap"
+            className="margin-right-60"
             htmlFor="userType-Anonymous"
           >
             <input
               checked={false}
-              className="usa-radio margin-right-2"
+              className="usa-radio margin-right-5"
               form={
                 Object {
                   "dirty": false,
@@ -149,6 +148,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                     "email": "",
                     "faxNumber": "",
                     "firstName": "",
+                    "inquiryAssignedTo": "",
                     "inquiryMedium": "",
                     "lastName": "",
                     "organization": "",
@@ -194,6 +194,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                     "email": "",
                     "faxNumber": "",
                     "firstName": "",
+                    "inquiryAssignedTo": "",
                     "inquiryMedium": "",
                     "lastName": "",
                     "organization": "",
@@ -223,12 +224,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
             </span>
           </label>
           <label
-            className="no-wrap"
-            htmlFor="userType-New User"
+            className="margin-right-60"
+            htmlFor="userType-Create New Customer"
           >
             <input
               checked={false}
-              className="usa-radio margin-right-2"
+              className="usa-radio margin-right-5"
               form={
                 Object {
                   "dirty": false,
@@ -251,6 +252,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                     "email": "",
                     "faxNumber": "",
                     "firstName": "",
+                    "inquiryAssignedTo": "",
                     "inquiryMedium": "",
                     "lastName": "",
                     "organization": "",
@@ -296,6 +298,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                     "email": "",
                     "faxNumber": "",
                     "firstName": "",
+                    "inquiryAssignedTo": "",
                     "inquiryMedium": "",
                     "lastName": "",
                     "organization": "",
@@ -311,164 +314,127 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   },
                 }
               }
-              id="userType-New User"
+              id="userType-Create New Customer"
               name="userType"
               onBlur={[Function]}
               onChange={[Function]}
               type="radio"
-              value="New User"
+              value="Create New Customer"
             />
             <span
               className="margin-right-105"
             >
-              New User
+              Create New Customer
+            </span>
+          </label>
+          <label
+            className="margin-right-60"
+            htmlFor="userType-Add Existing Customer"
+          >
+            <input
+              checked={false}
+              className="usa-radio margin-right-5"
+              form={
+                Object {
+                  "dirty": false,
+                  "errors": Object {},
+                  "getFieldHelpers": [Function],
+                  "getFieldMeta": [Function],
+                  "getFieldProps": [Function],
+                  "handleBlur": [Function],
+                  "handleChange": [Function],
+                  "handleReset": [Function],
+                  "handleSubmit": [Function],
+                  "initialErrors": Object {},
+                  "initialStatus": undefined,
+                  "initialTouched": Object {},
+                  "initialValues": Object {
+                    "addressOne": "",
+                    "addressTwo": "",
+                    "city": "",
+                    "country": "",
+                    "email": "",
+                    "faxNumber": "",
+                    "firstName": "",
+                    "inquiryAssignedTo": "",
+                    "inquiryMedium": "",
+                    "lastName": "",
+                    "organization": "",
+                    "phoneNumber": "",
+                    "state": "",
+                    "surveyOffered": "",
+                    "topicAutoSelect": "",
+                    "topicOfRequest": Array [],
+                    "typeOfInformation": Array [],
+                    "useOfInformation": Array [],
+                    "userType": "",
+                    "zipCode": "",
+                  },
+                  "isSubmitting": false,
+                  "isValid": true,
+                  "isValidating": false,
+                  "registerField": [Function],
+                  "resetForm": [Function],
+                  "setErrors": [Function],
+                  "setFieldError": [Function],
+                  "setFieldTouched": [Function],
+                  "setFieldValue": [Function],
+                  "setFormikState": [Function],
+                  "setStatus": [Function],
+                  "setSubmitting": [Function],
+                  "setTouched": [Function],
+                  "setValues": [Function],
+                  "status": undefined,
+                  "submitCount": 0,
+                  "submitForm": [Function],
+                  "touched": Object {},
+                  "unregisterField": [Function],
+                  "validateField": [Function],
+                  "validateForm": [Function],
+                  "validateOnBlur": true,
+                  "validateOnChange": true,
+                  "validateOnMount": false,
+                  "values": Object {
+                    "addressOne": "",
+                    "addressTwo": "",
+                    "city": "",
+                    "country": "",
+                    "email": "",
+                    "faxNumber": "",
+                    "firstName": "",
+                    "inquiryAssignedTo": "",
+                    "inquiryMedium": "",
+                    "lastName": "",
+                    "organization": "",
+                    "phoneNumber": "",
+                    "state": "",
+                    "surveyOffered": "",
+                    "topicAutoSelect": "",
+                    "topicOfRequest": Array [],
+                    "typeOfInformation": Array [],
+                    "useOfInformation": Array [],
+                    "userType": "",
+                    "zipCode": "",
+                  },
+                }
+              }
+              id="userType-Add Existing Customer"
+              name="userType"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="radio"
+              value="Add Existing Customer"
+            />
+            <span
+              className="margin-right-105"
+            >
+              Add Existing Customer
             </span>
           </label>
         </fieldset>
       </div>
     </div>
-    <div
-      className="container"
-    >
-      <div
-        className="container"
-      >
-        <div
-          className="row"
-        >
-          <input
-            name="firstName"
-            onBlur={[Function]}
-            onChange={[Function]}
-            placeholder="First name*"
-            value=""
-          />
-        </div>
-        <div
-          className="row"
-        >
-          <input
-            name="lastName"
-            onBlur={[Function]}
-            onChange={[Function]}
-            placeholder="Last name*"
-            value=""
-          />
-        </div>
-        <div
-          className="row"
-        >
-          <input
-            name="email"
-            onBlur={[Function]}
-            onChange={[Function]}
-            placeholder="Email"
-            value=""
-          />
-        </div>
-        <div
-          className="row"
-        >
-          <input
-            name="organization"
-            onBlur={[Function]}
-            onChange={[Function]}
-            placeholder="Organization"
-            value=""
-          />
-        </div>
-        <div
-          className="row"
-        >
-          <input
-            name="addressOne"
-            onBlur={[Function]}
-            onChange={[Function]}
-            placeholder="Street Address 1"
-            value=""
-          />
-        </div>
-        <div
-          className="row"
-        >
-          <input
-            name="addressTwo"
-            onBlur={[Function]}
-            onChange={[Function]}
-            placeholder="Street Address 2"
-            value=""
-          />
-        </div>
-        <div
-          className="row"
-        >
-          <input
-            name="city"
-            onBlur={[Function]}
-            onChange={[Function]}
-            placeholder="City"
-            value=""
-          />
-        </div>
-        <div
-          className="row"
-        >
-          <input
-            name="state"
-            onBlur={[Function]}
-            onChange={[Function]}
-            placeholder="State"
-            value=""
-          />
-        </div>
-        <div
-          className="row"
-        >
-          <input
-            name="zipCode"
-            onBlur={[Function]}
-            onChange={[Function]}
-            placeholder="Zip Code"
-            value=""
-          />
-        </div>
-        <div
-          className="row"
-        >
-          <input
-            name="country"
-            onBlur={[Function]}
-            onChange={[Function]}
-            placeholder="Country"
-            value=""
-          />
-        </div>
-        <div
-          className="row"
-        >
-          <input
-            name="phoneNumber"
-            onBlur={[Function]}
-            onChange={[Function]}
-            placeholder="Phone Number"
-            value=""
-          />
-        </div>
-        <div
-          className="row"
-        >
-          <input
-            name="faxNumber"
-            onBlur={[Function]}
-            onChange={[Function]}
-            placeholder="Fax Number"
-            value=""
-          />
-        </div>
-      </div>
-    </div>
   </div>
-  <br />
   <div
     className="cwig-card container"
   >
@@ -501,12 +467,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
             >
               <legend />
               <label
-                className="no-wrap"
+                className="margin-right-60"
                 htmlFor="inquiryMedium-Email"
               >
                 <input
                   checked={false}
-                  className="usa-radio margin-right-2"
+                  className="usa-radio margin-right-5"
                   form={
                     Object {
                       "dirty": false,
@@ -529,6 +495,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -574,6 +541,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -603,12 +571,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                 </span>
               </label>
               <label
-                className="no-wrap"
+                className="margin-right-60"
                 htmlFor="inquiryMedium-Live Chat"
               >
                 <input
                   checked={false}
-                  className="usa-radio margin-right-2"
+                  className="usa-radio margin-right-5"
                   form={
                     Object {
                       "dirty": false,
@@ -631,6 +599,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -676,6 +645,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -705,12 +675,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                 </span>
               </label>
               <label
-                className="no-wrap"
+                className="margin-right-60"
                 htmlFor="inquiryMedium-Phone"
               >
                 <input
                   checked={false}
-                  className="usa-radio margin-right-2"
+                  className="usa-radio margin-right-5"
                   form={
                     Object {
                       "dirty": false,
@@ -733,6 +703,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -778,6 +749,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -807,12 +779,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                 </span>
               </label>
               <label
-                className="no-wrap"
+                className="margin-right-60"
                 htmlFor="inquiryMedium-Voicemail"
               >
                 <input
                   checked={false}
-                  className="usa-radio margin-right-2"
+                  className="usa-radio margin-right-5"
                   form={
                     Object {
                       "dirty": false,
@@ -835,6 +807,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -880,6 +853,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -909,12 +883,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                 </span>
               </label>
               <label
-                className="no-wrap"
+                className="margin-right-60"
                 htmlFor="inquiryMedium-Visitor"
               >
                 <input
                   checked={false}
-                  className="usa-radio margin-right-2"
+                  className="usa-radio margin-right-5"
                   form={
                     Object {
                       "dirty": false,
@@ -937,6 +911,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -982,6 +957,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -1011,12 +987,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                 </span>
               </label>
               <label
-                className="no-wrap"
+                className="margin-right-60"
                 htmlFor="inquiryMedium-Website"
               >
                 <input
                   checked={false}
-                  className="usa-radio margin-right-2"
+                  className="usa-radio margin-right-5"
                   form={
                     Object {
                       "dirty": false,
@@ -1039,6 +1015,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -1084,6 +1061,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -1113,12 +1091,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                 </span>
               </label>
               <label
-                className="no-wrap"
+                className="margin-right-60"
                 htmlFor="inquiryMedium-Mail"
               >
                 <input
                   checked={false}
-                  className="usa-radio margin-right-2"
+                  className="usa-radio margin-right-5"
                   form={
                     Object {
                       "dirty": false,
@@ -1141,6 +1119,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -1186,6 +1165,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -1215,12 +1195,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                 </span>
               </label>
               <label
-                className="no-wrap"
+                className="margin-right-60"
                 htmlFor="inquiryMedium-Fax"
               >
                 <input
                   checked={false}
-                  className="usa-radio margin-right-2"
+                  className="usa-radio margin-right-5"
                   form={
                     Object {
                       "dirty": false,
@@ -1243,6 +1223,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -1288,6 +1269,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -1317,12 +1299,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                 </span>
               </label>
               <label
-                className="no-wrap"
+                className="margin-right-60"
                 htmlFor="inquiryMedium-Conference"
               >
                 <input
                   checked={false}
-                  className="usa-radio margin-right-2"
+                  className="usa-radio margin-right-5"
                   form={
                     Object {
                       "dirty": false,
@@ -1345,6 +1327,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -1390,6 +1373,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -1419,12 +1403,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                 </span>
               </label>
               <label
-                className="no-wrap"
+                className="margin-right-60"
                 htmlFor="inquiryMedium-Live Chat - email"
               >
                 <input
                   checked={false}
-                  className="usa-radio margin-right-2"
+                  className="usa-radio margin-right-5"
                   form={
                     Object {
                       "dirty": false,
@@ -1447,6 +1431,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -1492,6 +1477,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -1521,12 +1507,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                 </span>
               </label>
               <label
-                className="no-wrap"
+                className="margin-right-60"
                 htmlFor="inquiryMedium-Social Media"
               >
                 <input
                   checked={false}
-                  className="usa-radio margin-right-2"
+                  className="usa-radio margin-right-5"
                   form={
                     Object {
                       "dirty": false,
@@ -1549,6 +1535,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -1594,6 +1581,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                         "email": "",
                         "faxNumber": "",
                         "firstName": "",
+                        "inquiryAssignedTo": "",
                         "inquiryMedium": "",
                         "lastName": "",
                         "organization": "",
@@ -1648,10 +1636,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
           >
             <fieldset>
               <legend />
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="topic-2"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1665,10 +1655,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Adoption
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="topic-11"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1682,10 +1674,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Behavioral Health
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="topic-1"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1699,10 +1693,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Child Abuse and Neglect
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="topic-3"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1716,10 +1712,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Child Welfare Services and Systems
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="topic-12"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1733,10 +1731,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Custody
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="topic-9"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1750,10 +1750,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Family Support and Preservation
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="topic-4"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1767,10 +1769,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Family-Centered Practice
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="topic-10"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1784,10 +1788,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Kinship Care
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="topic-5"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1801,10 +1807,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Other
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="topic-6"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1818,10 +1826,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Out-of-Home Care/Foster Care
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="topic-7"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1835,10 +1845,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Permanency for Children and Youth
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="topic-8"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1852,10 +1864,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Prevention
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="topic-13"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1895,10 +1909,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
           >
             <fieldset>
               <legend />
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationUse-12"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1912,10 +1928,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Advocacy
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationUse-1"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1929,10 +1947,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Fundraising/Grant Writing
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationUse-2"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1946,10 +1966,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Other
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationUse-3"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1963,10 +1985,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Personal Use
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationUse-4"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1980,10 +2004,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Policy Development
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationUse-5"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1997,10 +2023,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Professional Development
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationUse-6"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2014,10 +2042,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Program Improvement
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationUse-7"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2031,10 +2061,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Provide Information for Families
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationUse-8"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2048,10 +2080,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Public Awareness
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationUse-11"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2065,10 +2099,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Reporting
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationUse-9"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2082,10 +2118,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Research
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationUse-13"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2099,10 +2137,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   School Project
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationUse-10"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2142,10 +2182,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
           >
             <fieldset>
               <legend />
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationType-13"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2159,10 +2201,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Complaint Resources
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationType-1"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2176,10 +2220,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Evidence-based Practice
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationType-2"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2193,10 +2239,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Family Assistance
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationType-3"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2210,10 +2258,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Funding Information
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationType-4"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2227,10 +2277,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   General Information
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationType-5"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2244,10 +2296,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Legal Issues/Laws
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationType-6"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2261,10 +2315,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Other
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationType-7"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2278,10 +2334,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Personal Help
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationType-8"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2295,10 +2353,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Professional Literature
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationType-9"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2312,10 +2372,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   State-specific Information
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationType-10"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2329,10 +2391,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Statistics
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationType-11"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2346,10 +2410,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                   Training/Education Information
                 </label>
               </span>
-              <span>
+              <span
+                class="margin-right-60"
+              >
                 <input
                   checked={false}
-                  className=""
+                  className="margin-right-5"
                   id="informationType-12"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -2369,7 +2435,6 @@ exports[`<InquiryForm /> renders correctly 1`] = `
       </div>
     </div>
   </div>
-  <br />
   <div
     className="cwig-card container"
   >
@@ -2396,12 +2461,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
         >
           <legend />
           <label
-            className="no-wrap"
+            className="margin-right-60"
             htmlFor="surveyOffered-Yes"
           >
             <input
               checked={false}
-              className="usa-radio margin-right-2"
+              className="usa-radio margin-right-5"
               form={
                 Object {
                   "dirty": false,
@@ -2424,6 +2489,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                     "email": "",
                     "faxNumber": "",
                     "firstName": "",
+                    "inquiryAssignedTo": "",
                     "inquiryMedium": "",
                     "lastName": "",
                     "organization": "",
@@ -2469,6 +2535,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                     "email": "",
                     "faxNumber": "",
                     "firstName": "",
+                    "inquiryAssignedTo": "",
                     "inquiryMedium": "",
                     "lastName": "",
                     "organization": "",
@@ -2498,12 +2565,12 @@ exports[`<InquiryForm /> renders correctly 1`] = `
             </span>
           </label>
           <label
-            className="no-wrap"
+            className="margin-right-60"
             htmlFor="surveyOffered-No"
           >
             <input
               checked={false}
-              className="usa-radio margin-right-2"
+              className="usa-radio margin-right-5"
               form={
                 Object {
                   "dirty": false,
@@ -2526,6 +2593,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                     "email": "",
                     "faxNumber": "",
                     "firstName": "",
+                    "inquiryAssignedTo": "",
                     "inquiryMedium": "",
                     "lastName": "",
                     "organization": "",
@@ -2571,6 +2639,7 @@ exports[`<InquiryForm /> renders correctly 1`] = `
                     "email": "",
                     "faxNumber": "",
                     "firstName": "",
+                    "inquiryAssignedTo": "",
                     "inquiryMedium": "",
                     "lastName": "",
                     "organization": "",
@@ -2601,6 +2670,83 @@ exports[`<InquiryForm /> renders correctly 1`] = `
           </label>
         </fieldset>
       </div>
+    </div>
+  </div>
+  <div
+    className="cwig-card container"
+  >
+    <div
+      className="row"
+    >
+      <h3>
+        Assign Inquiry
+      </h3>
+    </div>
+    <div
+      className="row"
+    >
+      <label
+        className="form-label"
+      >
+        Language:
+      </label>
+      <select
+        name="inquiryAssignedTo"
+        onBlur={[Function]}
+        onChange={[Function]}
+        value=""
+      >
+        <option
+          value={86}
+        >
+          Yam
+        </option>
+        <option
+          value={82}
+        >
+          Ngai
+        </option>
+        <option
+          value={98}
+        >
+          Fredericks
+        </option>
+        <option
+          value={85}
+        >
+          Clark
+        </option>
+        <option
+          value={15}
+        >
+          Lea
+        </option>
+        <option
+          value={102}
+        >
+          Rush
+        </option>
+        <option
+          value={99}
+        >
+          Gunawan
+        </option>
+        <option
+          value={101}
+        >
+          Adla
+        </option>
+        <option
+          value={50}
+        >
+          Ward
+        </option>
+        <option
+          value={100}
+        >
+          Yelanadu
+        </option>
+      </select>
     </div>
   </div>
   <button

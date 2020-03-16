@@ -350,16 +350,78 @@ const referenceData = {
     {"custType":"Student","custTypeID":3},
     {"custType":"Unknown","custTypeID":5}
   ],
-  "InquiryAssignedTo":[
-    {"surveyReason":"Caller < 18 Yrs","surveyReasonID":1},
-    {"surveyReason":"Belligerent/Intoxicated","surveyReasonID":2},
-    {"surveyReason":"Forgot to offer","surveyReasonID":3},
-    {"surveyReason":"Request not on a survey day","surveyReasonID":4},
-    {"surveyReason":"Language preference unsupported","surveyReasonID":5},
-    {"surveyReason":"2nd call today","surveyReasonID":6},
-    {"surveyReason":"Other","surveyReasonID":7},
-    {"surveyReason":"Customer hung up before survey could be offered","surveyReasonID":8}
-  ],
+  "inquiryAssignedTos": [
+    {
+        "lastname": "Yam",
+        "username": "aYam",
+        "firstname": "Alice",
+        "id": 86,
+        "email": "Alice.Yam@icfi.com"
+    },
+    {
+        "lastname": "Ngai",
+        "username": "bNgai",
+        "firstname": "Beryl",
+        "id": 82,
+        "email": "Beryl.Ngai@icfi.com"
+    },
+    {
+        "lastname": "Fredericks",
+        "username": "dfredericks",
+        "firstname": "Dan",
+        "id": 98,
+        "email": "Dan.Fredericks@icf.com"
+    },
+    {
+        "lastname": "Clark",
+        "username": "iClark",
+        "firstname": "Isabelle",
+        "id": 85,
+        "email": "Isabelle.Clark@icfi.com"
+    },
+    {
+        "lastname": "Lea",
+        "username": "mlea",
+        "firstname": "Marilena",
+        "id": 15,
+        "email": "mlea@icfi.com"
+    },
+    {
+        "lastname": "Rush",
+        "username": "mrush",
+        "firstname": "Michelle",
+        "id": 102,
+        "email": "michelle.rush@icf.com"
+    },
+    {
+        "lastname": "Gunawan",
+        "username": "ngunawan",
+        "firstname": "Nik",
+        "id": 99,
+        "email": "nik.gunawan@icf.com"
+    },
+    {
+        "lastname": "Adla",
+        "username": "sadla",
+        "firstname": "Suswari",
+        "id": 101,
+        "email": "suswari.adla@icf.com"
+    },
+    {
+        "lastname": "Ward",
+        "username": "tward",
+        "firstname": "Trip",
+        "id": 50,
+        "email": "tward@icfi.com"
+    },
+    {
+        "lastname": "Yelanadu",
+        "username": "vyelanadu",
+        "firstname": "Vikram",
+        "id": 100,
+        "email": "vikram.yelanadu@icf.com"
+    }
+],
   "itemTopics":[
     {"topicID":2,"topic":"Adoption","orderBy":2},
     {"topicID":11,"topic":"Behavioral Health","orderBy":11},
@@ -639,6 +701,6 @@ const referenceData = {
     "labelID":15,
     "label":"Child Custody"
   }
-]};
+]}
 
 export default referenceData;

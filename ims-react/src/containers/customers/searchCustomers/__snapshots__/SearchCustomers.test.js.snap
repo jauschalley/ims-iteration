@@ -7,7 +7,9 @@ exports[`<SearchCustomers /> renders correctly 1`] = `
   <div
     className="row"
   >
-    <h1>
+    <h1
+      class="margin-30"
+    >
       Search Customers
     </h1>
   </div>

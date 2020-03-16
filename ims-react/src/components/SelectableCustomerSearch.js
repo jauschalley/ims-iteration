@@ -45,6 +45,13 @@ const SelectableSearchCustomers = observer(({customerSearchStore, referenceDataS
                 <Field placeholder="First Name" name="firstName"></Field>
               </Col>
               <Col md={4}>
+
+
+
+
+
+
+                <CwigCard></CwigCard>
                 <FormLabel>Last Name</FormLabel>
                 <Field placeholder="Last Name" name="lastName"></Field>
               </Col>

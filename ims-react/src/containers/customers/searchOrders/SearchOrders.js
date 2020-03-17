@@ -8,6 +8,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import TablePagination from '@material-ui/core/TablePagination';
 import Paper from '@material-ui/core/Paper';
 import CwigCard from '../../../components/CwigCard';
 
@@ -21,6 +22,19 @@ const SearchOrders = observer(({orderSearchStore, referenceDataStore}) => {
       </option>
     ))
   );
+
+  const [page, setPage] = React.useState(0);
+  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+
+  const handleChangePage = (event, newPage) => {
+    setPage(newPage);
+  };
+
+  const handleChangeRowsPerPage = event => {
+    setRowsPerPage(parseInt(event.target.value, 10));
+    setPage(0);
+  };
+
 
   return(
     <Container>
@@ -86,7 +100,9 @@ const SearchOrders = observer(({orderSearchStore, referenceDataStore}) => {
           </Form>
         }
       </Formik>
-      {orderSearchStore.searchResults && <TableContainer component={Paper}>
+      {orderSearchStore.searchResults && 
+      <div>
+      <TableContainer component={Paper}>
         <Table aria-label="search customers table">
           <TableHead>
             <TableRow>
@@ -97,8 +113,10 @@ const SearchOrders = observer(({orderSearchStore, referenceDataStore}) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {orderSearchStore.searchResults.map(row => (
-              <TableRow key={row.name}>
+            {orderSearchStore.searchResults
+            .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+            .map(row => (
+              <TableRow key={row.orderID}>
                 <TableCell>{row.orderID}</TableCell>
                 <TableCell>{row.orderDate}</TableCell>
                 <TableCell>{row.firstName} {row.lastNameName}</TableCell>
@@ -107,7 +125,16 @@ const SearchOrders = observer(({orderSearchStore, referenceDataStore}) => {
             ))}
           </TableBody>
         </Table>
-      </TableContainer>}
+      </TableContainer>
+      <TablePagination 
+        rowsPerPageOptions={[10, 25]}
+        component="div"
+        count={orderSearchStore.searchResults.length}
+        rowsPerPage={rowsPerPage}
+        page={page}
+        onChangePage={handleChangePage}
+        onChangeRowsPerPage={handleChangeRowsPerPage}/>
+      </div>}
     </Container>
   );
 });

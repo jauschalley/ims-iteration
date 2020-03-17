@@ -7,12 +7,25 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import TablePagination from '@material-ui/core/TablePagination';
 import Paper from '@material-ui/core/Paper';
 import CwigCard from '../../../components/CwigCard';
 
 const Dashboard = ({customerDashboardStore}) => {
   let {week, month, quarter, year} = customerDashboardStore.dashboardStatistics.closedCounts;
   let openInquiries = customerDashboardStore.openInquiries.inquiries;
+
+  const [page, setPage] = React.useState(0);
+  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+
+  const handleChangePage = (event, newPage) => {
+    setPage(newPage);
+  };
+
+  const handleChangeRowsPerPage = event => {
+    setRowsPerPage(parseInt(event.target.value, 10));
+    setPage(0);
+  };
 
   return(
     <Container>
@@ -52,7 +65,9 @@ const Dashboard = ({customerDashboardStore}) => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {openInquiries.map(row => (
+              {openInquiries
+              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)             
+              .map(row => (
                 <TableRow key={row.name}>
                   <TableCell>{moment(row.inquiryDate).subtract(10, 'days').calendar()}</TableCell>
                   <TableCell>{row.firstName} {row.lastName}</TableCell>
@@ -64,6 +79,14 @@ const Dashboard = ({customerDashboardStore}) => {
             </TableBody>
           </Table>
         </TableContainer>
+        <TablePagination 
+        rowsPerPageOptions={[10, 25]}
+        component="div"
+        count={openInquiries.length}
+        rowsPerPage={rowsPerPage}
+        page={page}
+        onChangePage={handleChangePage}
+        onChangeRowsPerPage={handleChangeRowsPerPage}/>
       </CwigCard>
     </Container>
   );

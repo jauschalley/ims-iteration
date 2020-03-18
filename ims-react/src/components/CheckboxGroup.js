@@ -13,7 +13,7 @@ const Checkbox = ({
   ...props
 }) => {
   return (
-    <span class="margin-right-60">
+    <span className="margin-right-60">
       <input
         name={name}
         id={id}
@@ -74,7 +74,7 @@ class CheckboxGroup extends React.Component {
 }
 
 CheckboxGroup.propTypes = {
-  value: PropTypes.string,
+  value: PropTypes.array,
   id: PropTypes.string,
   onChange: PropTypes.func,
   onBlur: PropTypes.func

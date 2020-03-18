@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from 'moment';
+import {observer} from "mobx-react";
 import {Row, Col, Container} from 'react-bootstrap';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -11,9 +12,11 @@ import TablePagination from '@material-ui/core/TablePagination';
 import Paper from '@material-ui/core/Paper';
 import CwigCard from '../../../components/CwigCard';
 
-const Dashboard = ({customerDashboardStore}) => {
-  let {week, month, quarter, year} = customerDashboardStore.dashboardStatistics.closedCounts;
-  let openInquiries = customerDashboardStore.openInquiries.inquiries;
+const Dashboard = observer(({customerDashboardStore}) => {
+  customerDashboardStore.fetchDashboardStatistics();
+
+  let {week, month, quarter, year} = customerDashboardStore.loading? {} : customerDashboardStore.dashboardStatistics;
+  let openInquiries = customerDashboardStore.loading? {} : customerDashboardStore.openInquiries;
 
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
@@ -28,6 +31,8 @@ const Dashboard = ({customerDashboardStore}) => {
   };
 
   return(
+    customerDashboardStore.loading ? 
+    <span>Loading</span> :
     <Container>
       <Row><h1 class="margin-30">Customer Dashboard</h1></Row>
       <CwigCard>
@@ -90,6 +95,6 @@ const Dashboard = ({customerDashboardStore}) => {
       </CwigCard>
     </Container>
   );
-};
+});
 
 export default Dashboard;

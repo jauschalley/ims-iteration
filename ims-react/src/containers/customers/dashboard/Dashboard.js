@@ -12,7 +12,6 @@ import Paper from '@material-ui/core/Paper';
 import CwigCard from '../../../components/CwigCard';
 import { tablePaginationStore } from '../../../stores/TablePaginationStore';
 import TablePaginationGroup from '../../../components/TablePaginationGroup';
-import { observer } from 'mobx-react';
 
 const Dashboard = observer(({customerDashboardStore}) => {
   customerDashboardStore.fetchDashboardStatistics();

@@ -10,6 +10,8 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import CwigCard from '../../../components/CwigCard';
+import { tablePaginationStore } from '../../../stores/TablePaginationStore';
+import TablePaginationGroup from '../../../components/TablePaginationGroup';
 
 const mapSelectOptions = (options, labelKey, idKey) => (
   options.map((option) => (
@@ -21,6 +23,8 @@ const mapSelectOptions = (options, labelKey, idKey) => (
 
 const SearchInquiries = observer(({inquirySearchStore, referenceDataStore}) => {
   let refData = referenceDataStore.referenceData;
+  let page = tablePaginationStore.page;
+  let rowsPerPage = tablePaginationStore.rowsPerPage;
 
   return(
     <Container>
@@ -93,7 +97,9 @@ const SearchInquiries = observer(({inquirySearchStore, referenceDataStore}) => {
           </Form>
         }
       </Formik>
-      {inquirySearchStore.searchResults && <TableContainer component={Paper}>
+      {inquirySearchStore.searchResults && 
+      <div>
+      <TableContainer component={Paper}>
         <Table aria-label="search customers table">
           <TableHead>
             <TableRow>
@@ -104,7 +110,9 @@ const SearchInquiries = observer(({inquirySearchStore, referenceDataStore}) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {inquirySearchStore.searchResults.map(row => (
+            {inquirySearchStore.searchResults
+            .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+            .map(row => (
               <TableRow key={row.name}>
                 <TableCell>{row.inquiryID}</TableCell>
                 <TableCell>{row.firstName} {row.lastNameName}</TableCell>
@@ -114,7 +122,10 @@ const SearchInquiries = observer(({inquirySearchStore, referenceDataStore}) => {
             ))}
           </TableBody>
         </Table>
-      </TableContainer>}
+      </TableContainer>
+      <TablePaginationGroup tableRef={inquirySearchStore.searchResults}/>
+      </div>
+      }
     </Container>
   );
 });

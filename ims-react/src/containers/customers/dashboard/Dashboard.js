@@ -11,8 +11,9 @@ import Paper from '@material-ui/core/Paper';
 import CwigCard from '../../../components/CwigCard';
 import { tablePaginationStore } from '../../../stores/TablePaginationStore';
 import TablePaginationGroup from '../../../components/TablePaginationGroup';
+import { observer } from 'mobx-react';
 
-const Dashboard = ({customerDashboardStore}) => {
+const Dashboard = observer(({customerDashboardStore}) => {
   let {week, month, quarter, year} = customerDashboardStore.dashboardStatistics.closedCounts;
   let openInquiries = customerDashboardStore.openInquiries.inquiries;
   let page = tablePaginationStore.page;
@@ -57,7 +58,7 @@ const Dashboard = ({customerDashboardStore}) => {
             </TableHead>
             <TableBody>
               {openInquiries
-              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)             
+              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
               .map(row => (
                 <TableRow key={row.name}>
                   <TableCell>{moment(row.inquiryDate).subtract(10, 'days').calendar()}</TableCell>
@@ -74,6 +75,6 @@ const Dashboard = ({customerDashboardStore}) => {
       </CwigCard>
     </Container>
   );
-};
+});
 
 export default Dashboard;

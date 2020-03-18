@@ -10,6 +10,8 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import CwigCard from '../../../components/CwigCard';
+import { tablePaginationStore } from '../../../stores/TablePaginationStore';
+import TablePaginationGroup from '../../../components/TablePaginationGroup';
 
 const mapSelectOptions = (options, labelKey, idKey) => (
   options.map((option) => (
@@ -21,7 +23,9 @@ const mapSelectOptions = (options, labelKey, idKey) => (
 
 const SearchCustomers = observer(({customerSearchStore, referenceDataStore}) => {
   let refData = referenceDataStore.referenceData;
-  
+  let page = tablePaginationStore.page;
+  let rowsPerPage = tablePaginationStore.rowsPerPage;
+
   return(
     <Container>
       <Row><h1 class="margin-30">Search Customers</h1></Row>
@@ -77,7 +81,9 @@ const SearchCustomers = observer(({customerSearchStore, referenceDataStore}) => 
           </Form>
         }
       </Formik>
-      {customerSearchStore.searchResults && <TableContainer component={Paper}>
+      {customerSearchStore.searchResults && 
+       <div>
+      <TableContainer component={Paper}>
           <Table aria-label="search customers table">
             <TableHead>
               <TableRow>
@@ -89,7 +95,9 @@ const SearchCustomers = observer(({customerSearchStore, referenceDataStore}) => 
               </TableRow>
             </TableHead>
             <TableBody>
-              {customerSearchStore.searchResults.map(row => (
+              {customerSearchStore.searchResults
+              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+              .map(row => (
                 <TableRow key={row.name}>
                   <TableCell>{row.customerID}</TableCell>
                   <TableCell>{row.firstName}</TableCell>
@@ -100,7 +108,10 @@ const SearchCustomers = observer(({customerSearchStore, referenceDataStore}) => 
               ))}
             </TableBody>
           </Table>
-        </TableContainer>}
+        </TableContainer>
+        <TablePaginationGroup tableRef={customerSearchStore.searchResults}/>
+        </div>
+        }
     </Container>
   );
 });

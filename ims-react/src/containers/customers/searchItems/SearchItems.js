@@ -10,6 +10,8 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import CwigCard from '../../../components/CwigCard';
+import { tablePaginationStore } from '../../../stores/TablePaginationStore';
+import TablePaginationGroup from '../../../components/TablePaginationGroup';
 
 const buildLink = (url, linkText) => {
   return(
@@ -27,7 +29,9 @@ const mapSelectOptions = (options, labelKey, idKey) => (
 
 const SearchItems = observer(({itemSearchStore, referenceDataStore}) => {
   let refData = referenceDataStore.referenceData;
-
+  let page = tablePaginationStore.page;
+  let rowsPerPage = tablePaginationStore.rowsPerPage;
+  
   return(
     <Container>
       <Row><h1 class="margin-30">Search Items</h1></Row>
@@ -79,7 +83,9 @@ const SearchItems = observer(({itemSearchStore, referenceDataStore}) => {
           </Form>
         }
       </Formik>
-      {itemSearchStore.searchResults && <TableContainer component={Paper}>
+      {itemSearchStore.searchResults && 
+      <div>
+      <TableContainer component={Paper}>
         <Table aria-label="search customers table">
           <TableHead>
             <TableRow>
@@ -92,7 +98,9 @@ const SearchItems = observer(({itemSearchStore, referenceDataStore}) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {itemSearchStore.searchResults.map(row => (
+            {itemSearchStore.searchResults
+            .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+            .map(row => (
               <TableRow key={row.name}>
                 <TableCell>{row.calculatedSKU}</TableCell>
                 <TableCell>{row.title} {row.lastNameName}</TableCell>
@@ -104,7 +112,10 @@ const SearchItems = observer(({itemSearchStore, referenceDataStore}) => {
             ))}
           </TableBody>
         </Table>
-      </TableContainer>}
+      </TableContainer>
+      <TablePaginationGroup tableRef={itemSearchStore.searchResults}/>
+      </div>
+      }
     </Container>
   );
 });

@@ -8,10 +8,13 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import CwigCard from '../../../components/CwigCard';
 import { tablePaginationStore } from '../../../stores/TablePaginationStore';
 import TablePaginationGroup from '../../../components/TablePaginationGroup';
+import {stableSort} from '../../../components/TableSortGroup';
+
 
 const mapSelectOptions = (options, labelKey, idKey) => (
   options.map((option) => (
@@ -25,6 +28,25 @@ const SearchCustomers = observer(({customerSearchStore, referenceDataStore}) => 
   let refData = referenceDataStore.referenceData;
   let page = tablePaginationStore.page;
   let rowsPerPage = tablePaginationStore.rowsPerPage;
+
+  const [order, setOrder] = React.useState('desc');
+  const [orderBy, setOrderBy] = React.useState('ID');
+  const [orderByApiField, setOrderByApiField] = React.useState('customerID');
+
+  const tableHeadCells = [
+    {name: 'ID', apiFieldName: 'customerID'},
+    {name: 'First Name', apiFieldName: 'firstName'},
+    {name: 'Last Name', apiFieldName: 'lastName'},
+    {name: 'Email', apiFieldName: 'email'},
+    {name: 'Phone', apiFieldName: 'phone'}
+  ]
+
+  const handleRequestSort = property => event => {
+    const isDesc = orderBy === property && order === "desc";
+    setOrder(isDesc ? "asc" : "desc");
+    setOrderBy(property);
+    setOrderByApiField(tableHeadCells.filter( field => field.name == property)[0].apiFieldName)
+  };
 
   return(
     <Container>
@@ -87,25 +109,31 @@ const SearchCustomers = observer(({customerSearchStore, referenceDataStore}) => 
           <Table aria-label="search customers table">
             <TableHead>
               <TableRow>
-                <TableCell>ID</TableCell>
-                <TableCell>First name</TableCell>
-                <TableCell>Last Name</TableCell>
-                <TableCell>Email</TableCell>
-                <TableCell>Phone</TableCell>
+                {tableHeadCells.map( cell => (
+                  <TableCell key={cell.name}>
+                    <TableSortLabel
+                      active={true}
+                      direction={orderBy === cell.name ? order : 'asc'}
+                      onClick={handleRequestSort(cell.name)}
+                    >
+                      {cell.name}
+                    </TableSortLabel>
+                  </TableCell>
+                ))}
               </TableRow>
             </TableHead>
             <TableBody>
-              {customerSearchStore.searchResults
-              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-              .map(row => (
-                <TableRow key={row.name}>
-                  <TableCell>{row.customerID}</TableCell>
-                  <TableCell>{row.firstName}</TableCell>
-                  <TableCell>{row.lastName}</TableCell>
-                  <TableCell>{row.email}</TableCell>
-                  <TableCell>{row.phone}</TableCell>
-                </TableRow>
-              ))}
+              {stableSort(customerSearchStore.searchResults, order, orderByApiField)
+                .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                .map(row => (
+                  <TableRow key={row.customerID}>
+                    <TableCell>{row.customerID}</TableCell>
+                    <TableCell>{row.firstName}</TableCell>
+                    <TableCell>{row.lastName}</TableCell>
+                    <TableCell>{row.email}</TableCell>
+                    <TableCell>{row.phone}</TableCell>
+                  </TableRow>
+                ))}
             </TableBody>
           </Table>
         </TableContainer>

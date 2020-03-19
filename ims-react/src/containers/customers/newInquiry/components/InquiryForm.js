@@ -1,12 +1,13 @@
 import React from 'react';
 import {Formik, Field} from 'formik';
+import {observer} from "mobx-react";
 import {Row, Col, Button, Form, Container, FormLabel} from 'react-bootstrap';
 import CwigCard from '../../../../components/CwigCard';
 import RadioButtonGroup from '../../../../components/RadioButtonGroup';
 import {CheckboxGroup, Checkbox} from '../../../../components/CheckboxGroup';
-import SelectableSearchCustomers from '../../../../components/SelectableCustomerSearch';
+import SelectExistingUserForm from '../../../../components/SelectExistinUserForm';
 
-const mapSelectOptions = (options, labelKey, idKey) => console.log(options, labelKey)  || (
+const mapSelectOptions = (options, labelKey, idKey) => (
   options.map((option) => (
     <option value={option[idKey]} key={option[idKey]}>
       {option[labelKey]}
@@ -127,36 +128,47 @@ const newUserForm = () => (
   </Container>
 );
 
-const findExistingUserForm = () => (
-  <Container>
-    <h3>Find existing user</h3>
-    {/* <SelectableSearchCustomers></SelectableSearchCustomers> */}
-  </Container>
-);
+const onCustomerSelect = (firstName, lastName, id, formikProps) => {
+  formikProps.setFieldValue('selectedCustomer.id', id)
+  formikProps.setFieldValue('selectedCustomer.firstName', firstName)
+  formikProps.setFieldValue('selectedCustomer.lastName', lastName)
+}
 
-const selectCustomer = (referenceData, formikProps) => (
+const selectCustomer = (referenceData, formikProps, customerSearchStore) => (
   <CwigCard>
     <Row>
       <h3>Select Customer</h3>
     </Row>
-    <Row>
-      <RadioButtonGroup 
-        id="userType"
-        options={["Anonymous", "Create New Customer", "Add Existing Customer"]}
-        value={formikProps.usertype}
-      />
-    </Row>
+    { formikProps.values.selectedCustomer.id === '' ?
+      <Row>
+        <RadioButtonGroup 
+          id="userType"
+          options={["Anonymous", "Create New Customer", "Add Existing Customer"]}
+          value={formikProps.usertype}
+        />
+      </Row>: null
+    }
     {
-      formikProps.values.userType === "Anonymous" ? 
+      formikProps.values.userType === "Anonymous" & formikProps.values.selectedCustomer.id === '' ? 
       anonymousUserForm(referenceData) : null
     }
     {
-      formikProps.values.userType === "Create New Customer" ? 
+      formikProps.values.userType === "Create New Customer" & formikProps.values.selectedCustomer.id === '' ? 
       newUserForm() : null
     }
     {
-      formikProps.values.userType === "Add Existing Customer" ? 
-      findExistingUserForm() : null
+      formikProps.values.userType === "Add Existing Customer" & formikProps.values.selectedCustomer.id === '' ? 
+      <SelectExistingUserForm 
+        customerSearchStore={customerSearchStore} 
+        onCustomerSelect={
+          ({firstName, lastName, customerID})=> onCustomerSelect(firstName, lastName, customerID, formikProps)}>
+      </SelectExistingUserForm> : null
+    }
+    {
+      formikProps.values.selectedCustomer.id !== '' ?
+      <Row>
+        <p>SelectedCustomer: {formikProps.values.selectedCustomer.firstName} {formikProps.values.selectedCustomer.lastName}</p>
+      </Row> : null
     }
   </CwigCard>
 );
@@ -283,7 +295,7 @@ const inquiryAssignedTo = (referenceData) => (
   </CwigCard>
 )
 
-const InquiryForm = ({referenceData}) => {
+const InquiryForm = observer(({referenceData, customerSearchStore}) => {
   return(
     <Formik
       initialValues={{
@@ -306,15 +318,20 @@ const InquiryForm = ({referenceData}) => {
         country: '',
         phoneNumber: '',
         faxNumber: '',
-        inquiryAssignedTo:''
+        inquiryAssignedTo:'',
+        selectedCustomer: {
+          firstName:'',
+          lastName: '',
+          id: ''
+        }
       }}
       onSubmit={values => console.log(values)}
     >
       {
-        formikProps =>
+        formikProps => console.log(formikProps) ||
         <Form>
           {topicAutoSelect(referenceData, formikProps)}
-          {selectCustomer(referenceData, formikProps)}
+          {selectCustomer(referenceData, formikProps, customerSearchStore)}
           {chooseTopics(referenceData, formikProps)}
           {surveyInformation(referenceData, formikProps)}
           {inquiryAssignedTo(referenceData, formikProps)}
@@ -323,6 +340,6 @@ const InquiryForm = ({referenceData}) => {
       }
     </Formik>
   );
-};
+});
 
 export default InquiryForm;

@@ -44,39 +44,37 @@ const SearchCustomers = observer(({customerSearchStore, referenceDataStore}) => 
         {formikProps =>
           <Form>
             <CwigCard>
-              <Row>
-                <Col md={4}>
-                  <FormLabel>First Name</FormLabel>
-                  <Field placeholder="First Name" name="firstName"></Field>
-                </Col>
-                <Col md={4}>
-                  <FormLabel>Last Name</FormLabel>
-                  <Field placeholder="Last Name" name="lastName"></Field>
-                </Col>
-                <Col md={4}>
-                  <FormLabel>Email</FormLabel>
-                  <Field placeholder="Email" name="email"></Field>
-                </Col>
-              </Row>
-              <Row>
-                <Col md={4}>
-                  <FormLabel>Organization</FormLabel>
-                  <Field placeholder="Organization" name="organization"></Field>
-                </Col>
-                <Col md={4}>
-                <FormLabel>State</FormLabel>
-                  <Field as="select" name="state">
+              <Form.Row>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>First Name</Form.Label>
+                  <Form.Control placeholder="First Name" name="firstName"></Form.Control>
+                </Form.Group>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Last Name</Form.Label>
+                  <Form.Control placeholder="Last Name" name="lastName"></Form.Control>
+                </Form.Group>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control placeholder="Email" name="email"></Form.Control>
+                </Form.Group>
+              </Form.Row>
+              <Form.Row>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Organization</Form.Label>
+                  <Form.Control placeholder="Organization" name="organization"></Form.Control>
+                </Form.Group>
+                <Form.Group as={Col} md="4">
+                <Form.Label>State</Form.Label>
+                  <Form.Control as="select" name="state">
                     {mapSelectOptions(refData.states, 'state', 'stateID')}
-                  </Field>
-                </Col>
-                <Col md={4}>
-                  <FormLabel>Phone Number</FormLabel>
-                  <Field placeholder="Phone Number" name="phone"></Field>
-                </Col>
-              </Row>
-              <Row>
-                <Button className="search" onClick={formikProps.handleSubmit}>Search</Button>
-              </Row>
+                  </Form.Control>
+                </Form.Group>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Phone Number</Form.Label>
+                  <Form.Control placeholder="Phone Number" name="phone"></Form.Control>
+                </Form.Group>
+              </Form.Row>
+              <Button className="search" onClick={formikProps.handleSubmit}>Search</Button>
             </CwigCard>
           </Form>
         }

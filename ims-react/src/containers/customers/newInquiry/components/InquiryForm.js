@@ -32,59 +32,61 @@ const topicAutoSelect = (referenceData) => (
       <h3>Topic Labels</h3>
     </Row>
     <Row>
-      <Field
+    <Form.Group md="6">
+      <Form.Control
         as="select"
         name="topicAutoSelect"
       >
         {mapSelectOptions(referenceData.topicLabels, 'label', 'labelID')}
-      </Field>
+      </Form.Control>
+      </Form.Group>
     </Row>
   </CwigCard>
 );
 
 const anonymousUserForm = (referenceData) => (
-  <Container>
-    <Row>
-      <Col md={6}>
-        <FormLabel>Customer type:</FormLabel>
-        <Field
+  <fieldset>
+    <Form.Row>
+      <Form.Group as={Col} md="6">
+        <Form.Label>Customer type:</Form.Label>
+        <Form.Control
           as="select"
           name="customerType"
         >
           {mapSelectOptions(referenceData.customerTypes, "custType", "custTypeID")}
-        </Field>
-      </Col>
-      <Col md={6}>
-        <FormLabel>Customer role:</FormLabel>
-        <Field
+        </Form.Control>
+      </Form.Group>
+      <Form.Group as={Col} md="6">
+        <Form.Label>Customer role:</Form.Label>
+        <Form.Control
           as="select"
           name="customerRole"
         >
           {mapSelectOptions(referenceData.customerRoles, "custRole", "custRoleID")}
-        </Field>
-      </Col>
-    </Row>
-    <Row>
-      <Col md={6}>
-        <FormLabel>Organization type:</FormLabel>
-        <Field
+        </Form.Control>
+      </Form.Group>
+    </Form.Row>
+    <Form.Row>
+      <Form.Group as={Col} md="6">
+        <Form.Label>Organization type:</Form.Label>
+        <Form.Control
           as="select"
           name="customerType"
         >
           {mapSelectOptions(referenceData.organizationTypes, "orgType", "orgTypeID")}
-        </Field>
-      </Col>
-      <Col md={6}>
-        <FormLabel>Language:</FormLabel>
-        <Field
+        </Form.Control>
+      </Form.Group>
+      <Form.Group as={Col} md="6">
+        <Form.Label>Language:</Form.Label>
+        <Form.Control
           as="select"
           name="customerRole"
         >
           {mapSelectOptions(referenceData.languages, "language", "languageID")}
-        </Field>
-      </Col>
-    </Row>
-  </Container>
+        </Form.Control>
+      </Form.Group>
+    </Form.Row>
+  </fieldset>
 );
 
 const newUserForm = () => (
@@ -175,7 +177,7 @@ const selectCustomer = (referenceData, formikProps, customerSearchStore) => (
 
 const chooseTopics = (referenceData, formikProps) => (
   <CwigCard>
-    <Row>
+    <Row className="mb-2">
       <h3>Choose Topics</h3>
     </Row>
     <Row>

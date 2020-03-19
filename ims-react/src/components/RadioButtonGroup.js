@@ -1,11 +1,12 @@
 import React from 'react';
 import {Field} from 'formik';
+import {Form} from 'react-bootstrap';
 
 const RadioButtonGroup = ({
   id, labelPrefix = '', label, value, error, touched, options, includeOther = false, disabled
 }) => {
   return(
-    <Group
+    <Form.Group
       id={id}
       label={label}
       value={value}
@@ -42,7 +43,7 @@ const RadioButtonGroup = ({
         </div>
       }
       
-    </Group>
+    </Form.Group>
   );
 };
 
@@ -59,20 +60,35 @@ const radioButtonHtml = ({
   className,
   ...props
 }) => (
-  <label className="margin-right-60" htmlFor={`${name}-${id}`}>
-    <input
-      name={name}
-      id={`${name}-${id}`}
-      type="radio"
-      value={id}
-      checked={id.toString() === value.toString()}
-      onChange={onChange}
-      onBlur={onBlur}
-      className={"usa-radio margin-right-5"}
-      {...props}
-    />
-    <span className={`${'margin-right-105'}`}>{label}</span>
-  </label>
+
+    <Form.Check 
+    inline 
+    name={name}
+    label={label} 
+    type="radio" 
+    id={`${name}-${id}`}
+    value={id}
+    checked={id.toString() === value.toString()}
+    onChange={onChange}
+    onBlur={onBlur}
+    className={"usa-radio margin-right-15 col-md-3"}
+    {...props}
+      />
+
+  // <label className="col-md-4" htmlFor={`${name}-${id}`}>
+  //   <input
+  //     name={name}
+  //     id={`${name}-${id}`}
+  //     type="radio"
+  //     value={id}
+  //     checked={id.toString() === value.toString()}
+  //     onChange={onChange}
+  //     onBlur={onBlur}
+  //     className={"usa-radio margin-right-5"}
+  //     {...props}
+  //   />
+  //   <span className={`${'margin-right-105'}`}>{label}</span>
+  // </label>
 );
 
 const Group = ({

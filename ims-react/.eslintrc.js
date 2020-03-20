@@ -11,6 +11,7 @@ module.exports = {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -24,7 +25,8 @@ module.exports = {
         "process": true,
         "expect": true,
         "it": true,
-        "describe": true
+        "describe": true,
+        "module": true
       },
     "plugins": [
         "react"

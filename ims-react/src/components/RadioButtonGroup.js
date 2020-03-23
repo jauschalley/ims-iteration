@@ -74,21 +74,6 @@ const radioButtonHtml = ({
     className={"usa-radio margin-right-15 col-md-3"}
     {...props}
       />
-
-  // <label className="col-md-4" htmlFor={`${name}-${id}`}>
-  //   <input
-  //     name={name}
-  //     id={`${name}-${id}`}
-  //     type="radio"
-  //     value={id}
-  //     checked={id.toString() === value.toString()}
-  //     onChange={onChange}
-  //     onBlur={onBlur}
-  //     className={"usa-radio margin-right-5"}
-  //     {...props}
-  //   />
-  //   <span className={`${'margin-right-105'}`}>{label}</span>
-  // </label>
 );
 
 const Group = ({

@@ -27,20 +27,6 @@ const Checkbox = ({
     className={"margin-right-15 col-md-3"}
     {...props}
       />
-    // <span class="col-md-4">
-    //   <input
-    //     name={name}
-    //     id={id}
-    //     type="checkbox"
-    //     value={value}
-    //     checked={value}
-    //     onChange={onChange}
-    //     onBlur={onBlur}
-    //     className="margin-right-5"
-    //   />
-    //   <label htmlFor={id} className="">{label}</label>
-    //   {touched[name] && <InputFeedback error={errors[name]} />}
-    // </span>
   );
 };
 

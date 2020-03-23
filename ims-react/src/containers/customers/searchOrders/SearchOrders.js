@@ -44,48 +44,46 @@ const SearchOrders = observer(({orderSearchStore, referenceDataStore}) => {
         {formikProps =>
           <Form>
             <CwigCard>
-              <Row>
-                <Col md={4}>
-                  <FormLabel>Order Status</FormLabel>
-                  <Field as="select" name="orderStatus">
+              <Form.Row>
+              <Form.Group as={Col} md="4">
+                  <Form.Label>Order Status</Form.Label>
+                  <Form.Control as="select" name="orderStatus">
                     {mapSelectOptions(refData.orderStatuses, 'status', 'id')}
-                  </Field>
-                </Col>
-                <Col md={4}>
-                  <FormLabel>Order Type</FormLabel>
-                  <Field as="select" name="orderStatus">
+                  </Form.Control>
+                </Form.Group>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Order Type</Form.Label>
+                  <Form.Control as="select" name="orderStatus">
                     {mapSelectOptions(refData.orderTypes, 'orderType', 'typeID')}
-                  </Field>
-                </Col>
-                <Col md={4}>
-                  <FormLabel>Order ID</FormLabel>
-                  <Field placeholder="Order ID" name="orderId"></Field>
-                </Col>
-              </Row>
-              <Row>
-                <Col md={4}>
-                  <FormLabel>Customer First Name</FormLabel>
-                  <Field placeholder="First Name" name="customerFirstName"></Field>
-                </Col>
-                <Col md={4}>
-                  <FormLabel>Customer Last Name</FormLabel>
-                  <Field placeholder="Last Name" name="customerLastName"></Field>
-                </Col>
-                <Col md={4}>
-                  <FormLabel>Customer Zip Code</FormLabel>
-                  <Field placeholder="Zip Code" name="zipCode"></Field>
-                </Col>
-              </Row>
-              <Row>
-                <Col md={6}>
-                  <FormLabel>Date Range</FormLabel>
-                  <Field placeholder="Date From" name="dateFrom"></Field>
-                  <Field placeholder="Date To" name="dateTo"></Field>
-                </Col>
-              </Row>
-              <Row>
-                <Button className="search" onClick={formikProps.handleSubmit}>Search</Button>
-              </Row>
+                  </Form.Control>
+                </Form.Group>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Order ID</Form.Label>
+                  <Form.Control placeholder="Order ID" name="orderId"></Form.Control>
+                </Form.Group>
+              </Form.Row>
+              <Form.Row>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Customer First Name</Form.Label>
+                  <Form.Control placeholder="First Name" name="customerFirstName"></Form.Control>
+                </Form.Group>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Customer Last Name</Form.Label>
+                  <Form.Control placeholder="Last Name" name="customerLastName"></Form.Control>
+                </Form.Group>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Customer Zip Code</Form.Label>
+                  <Form.Control placeholder="Zip Code" name="zipCode"></Form.Control>
+                </Form.Group>
+              </Form.Row>
+              <Form.Row>
+                <Form.Group as={Col} md="6">
+                  <Form.Label>Date Range</Form.Label>
+                  <Form.Control placeholder="Date From" name="dateFrom"></Form.Control>
+                  <Form.Control placeholder="Date To" name="dateTo"></Form.Control>
+                </Form.Group>
+              </Form.Row>
+              <Button className="search" onClick={formikProps.handleSubmit}>Search</Button>
             </CwigCard>
           </Form>
         }

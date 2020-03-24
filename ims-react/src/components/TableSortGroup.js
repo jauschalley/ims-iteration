@@ -1,11 +1,21 @@
 function descendingComparator(a, b, orderBy) {
-  if (b[orderBy] < a[orderBy]) {
-    return -1;
+  if(orderBy.toLowerCase().includes('date')){
+    if (new Date(b[orderBy]).getTime() < new Date(a[orderBy]).getTime()) {
+      return -1;
+    }
+    if (new Date(b[orderBy]).getTime() > new Date(a[orderBy]).getTime()) {
+      return 1;
+    }
+    return 0;
+  }else{
+    if (b[orderBy] < a[orderBy]) {
+      return -1;
+    }
+    if (b[orderBy] > a[orderBy]) {
+      return 1;
+    }
+    return 0;
   }
-  if (b[orderBy] > a[orderBy]) {
-    return 1;
-  }
-  return 0;
 }
 
 function getComparator(order, orderBy) {

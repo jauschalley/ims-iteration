@@ -20,18 +20,8 @@ const Dashboard = observer(({customerDashboardStore}) => {
 
   let {week, month, quarter, year} = customerDashboardStore.loading? {} : customerDashboardStore.dashboardStatistics;
   let openInquiries = customerDashboardStore.loading? {} : customerDashboardStore.openInquiries;
-
-  const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
-
-  const handleChangePage = (event, newPage) => {
-    setPage(newPage);
-  };
-
-  const handleChangeRowsPerPage = event => {
-    setRowsPerPage(parseInt(event.target.value, 10));
-    setPage(0);
-  };
+  let page = tablePaginationStore.page;
+  let rowsPerPage = tablePaginationStore.rowsPerPage;
 
   const [order, setOrder] = React.useState('desc');
   const [orderBy, setOrderBy] = React.useState('Inquiry Date');
@@ -49,14 +39,14 @@ const Dashboard = observer(({customerDashboardStore}) => {
     const isDesc = orderBy === property && order === "desc";
     setOrder(isDesc ? "asc" : "desc");
     setOrderBy(property);
-    setOrderByApiField(tableHeadCells.filter( field => field.name == property)[0].apiFieldName)
+    setOrderByApiField(tableHeadCells.filter( field => field.name === property)[0].apiFieldName)
   };
 
   return(
     customerDashboardStore.loading ? 
     <span>Loading</span> :
     <Container>
-      <Row><h1 class="margin-30">Customer Dashboard</h1></Row>
+      <Row><h1 className="margin-30">Customer Dashboard</h1></Row>
       <CwigCard>
         <Row>
           <h3>Count of Inquiries</h3>
@@ -102,10 +92,10 @@ const Dashboard = observer(({customerDashboardStore}) => {
                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                 .map(row => (
                   <TableRow key={row.inquiryID}>
-                    <TableCell>{moment(row.inquiryDate).subtract(10, 'days').calendar()}</TableCell>
+                    <TableCell>{moment(row.inquiryDate).format('LL')}</TableCell>
                     <TableCell>{row.firstName} {row.lastName}</TableCell>
                     <TableCell>{row.inquiryID}</TableCell>
-                    <TableCell>{moment(row.statusChangeDate).subtract(10, 'days').calendar()}</TableCell>
+                    <TableCell>{moment(row.inquiryDate).format('LL')}</TableCell>
                     <TableCell>{row.assignedTo}</TableCell>
                   </TableRow>
               ))}

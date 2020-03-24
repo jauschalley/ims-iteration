@@ -1,7 +1,7 @@
 import React from 'react';
 import {Formik, Field} from 'formik';
 import {observer} from "mobx-react";
-import {Row, Col, Button, Form, Container, FormLabel} from 'react-bootstrap';
+import {Row, Col, Button, Form, Container} from 'react-bootstrap';
 import CwigCard from '../../../../components/CwigCard';
 import RadioButtonGroup from '../../../../components/RadioButtonGroup';
 import {CheckboxGroup, Checkbox} from '../../../../components/CheckboxGroup';
@@ -32,7 +32,7 @@ const topicAutoSelect = (referenceData) => (
       <h3>Topic Labels</h3>
     </Row>
     <Row>
-    <Form.Group md="6">
+    <Form.Group>
       <Form.Control
         as="select"
         name="topicAutoSelect"
@@ -267,15 +267,18 @@ const surveyInformation = (referenceData, formikProps) => (
         id="surveyOffered"
         options={['Yes', 'No']}
         value={formikProps.surveyOffered}
+        className="col-md-4"
       />
     </Row>
     { formikProps.values.surveyOffered === 'No' && <Row>
-      <Field
-        as="select"
-        name="surveyOption"
-      >
-        {mapSelectOptions(referenceData.surveyReasons, 'surveyReason', 'surveyReasonID')}
-      </Field>
+      <Form.Group>
+        <Form.Control
+          as="select"
+          name="surveyOption"
+        >
+          {mapSelectOptions(referenceData.surveyReasons, 'surveyReason', 'surveyReasonID')}
+        </Form.Control>
+      </Form.Group>
     </Row>}
   </CwigCard>
 );
@@ -286,13 +289,15 @@ const inquiryAssignedTo = (referenceData) => (
       <h3>Assign Inquiry</h3>
     </Row>
     <Row>
-    <FormLabel>Language:</FormLabel>
-      <Field
-        as="select"
-        name="inquiryAssignedTo"
-      >
-        {mapSelectOptions(referenceData.inquiryAssignedTos, "lastname", "id")}
-      </Field>
+      <Form.Label column md={1}>Assignee:</Form.Label>
+      <Col md={4}>
+        <Form.Control
+          as="select"
+          name="inquiryAssignedTo"
+        >
+          {mapSelectOptions(referenceData.inquiryAssignedTos, "lastname", "id")}
+        </Form.Control>
+      </Col>
     </Row>
   </CwigCard>
 )

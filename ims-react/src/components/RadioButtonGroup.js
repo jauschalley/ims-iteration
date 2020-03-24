@@ -3,7 +3,7 @@ import {Field} from 'formik';
 import {Form} from 'react-bootstrap';
 
 const RadioButtonGroup = ({
-  id, labelPrefix = '', label, value, error, touched, options, includeOther = false, disabled
+  id, labelPrefix = '', label, value, error, touched, options, includeOther = false, disabled, className="col-md-12"
 }) => {
   return(
     <Form.Group
@@ -12,6 +12,7 @@ const RadioButtonGroup = ({
       value={value}
       error={error}
       touched={touched}
+      className={className}
     >
       { options.map((option) => (
         <Field

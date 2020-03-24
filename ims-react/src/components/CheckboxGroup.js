@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Form, Row, Col} from 'react-bootstrap';
+import {Form} from 'react-bootstrap';
 
 const InputFeedback = ({error}) =>
   error ? <div className={"input-feedback"}>{error}</div> : null;
@@ -57,7 +57,7 @@ class CheckboxGroup extends React.Component {
       <div className={classes}>
         <fieldset>
           <legend>{label}</legend>
-          <Form.Group>
+          <Form.Group className="col-md-12">
           {React.Children.map(children, child => {
             return React.cloneElement(child, {
               field: {

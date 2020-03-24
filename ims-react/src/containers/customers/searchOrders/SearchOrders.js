@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 import {observer} from "mobx-react";
 import {Formik } from 'formik';
 import {Row, Container, Col, Form, Button} from 'react-bootstrap';
@@ -35,7 +36,7 @@ const SearchOrders = observer(({orderSearchStore, referenceDataStore}) => {
     const isDesc = orderBy === property && order === "desc";
     setOrder(isDesc ? "asc" : "desc");
     setOrderBy(property);
-    setOrderByApiField(tableHeadCells.filter( field => field.name == property)[0].apiFieldName)
+    setOrderByApiField(tableHeadCells.filter( field => field.name === property)[0].apiFieldName)
   };
 
   const mapSelectOptions = (options, labelKey, idKey) => (
@@ -135,7 +136,7 @@ const SearchOrders = observer(({orderSearchStore, referenceDataStore}) => {
               .map(row => (
                 <TableRow key={row.orderID}>
                   <TableCell>{row.orderID}</TableCell>
-                  <TableCell>{row.orderDate}</TableCell>
+                  <TableCell>{moment(row.orderDate).format('LL')}</TableCell>
                   <TableCell>{row.firstName} {row.lastNameName}</TableCell>
                   <TableCell>{row.status}</TableCell>
                 </TableRow>

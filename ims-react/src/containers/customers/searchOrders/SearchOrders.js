@@ -8,15 +8,35 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import CwigCard from '../../../components/CwigCard';
 import { tablePaginationStore } from '../../../stores/TablePaginationStore';
 import TablePaginationGroup from '../../../components/TablePaginationGroup';
+import {stableSort} from '../../../components/TableSortGroup';
 
 const SearchOrders = observer(({orderSearchStore, referenceDataStore}) => {
   let refData = referenceDataStore.referenceData;
   let page = tablePaginationStore.page;
   let rowsPerPage = tablePaginationStore.rowsPerPage;
+
+  const [order, setOrder] = React.useState('desc');
+  const [orderBy, setOrderBy] = React.useState('Order ID');
+  const [orderByApiField, setOrderByApiField] = React.useState('orderID');
+
+  const tableHeadCells = [
+    {name: 'Order ID', apiFieldName: 'orderID'},
+    {name: 'Order Date', apiFieldName: 'orderDate'},
+    {name: 'Customer', apiFieldName: 'firstName'},
+    {name: 'Status', apiFieldName: 'status'},
+  ]
+
+  const handleRequestSort = property => event => {
+    const isDesc = orderBy === property && order === "desc";
+    setOrder(isDesc ? "asc" : "desc");
+    setOrderBy(property);
+    setOrderByApiField(tableHeadCells.filter( field => field.name == property)[0].apiFieldName)
+  };
 
   const mapSelectOptions = (options, labelKey, idKey) => (
     options.map((option) => (
@@ -94,23 +114,30 @@ const SearchOrders = observer(({orderSearchStore, referenceDataStore}) => {
         <Table aria-label="search customers table">
           <TableHead>
             <TableRow>
-              <TableCell>Order ID</TableCell>
-              <TableCell>Order Date</TableCell>
-              <TableCell>Customer</TableCell>
-              <TableCell>Status</TableCell>
+              {tableHeadCells.map( cell => (
+                  <TableCell key={cell.name}>
+                    <TableSortLabel
+                      active={true}
+                      direction={orderBy === cell.name ? order : 'asc'}
+                      onClick={handleRequestSort(cell.name)}
+                    >
+                      {cell.name}
+                    </TableSortLabel>
+                  </TableCell>
+                ))}
             </TableRow>
           </TableHead>
           <TableBody>
-            {orderSearchStore.searchResults
-            .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-            .map(row => (
-              <TableRow key={row.orderID}>
-                <TableCell>{row.orderID}</TableCell>
-                <TableCell>{row.orderDate}</TableCell>
-                <TableCell>{row.firstName} {row.lastNameName}</TableCell>
-                <TableCell>{row.status}</TableCell>
-              </TableRow>
-            ))}
+            {stableSort(orderSearchStore.searchResults, order, orderByApiField)
+              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+              .map(row => (
+                <TableRow key={row.orderID}>
+                  <TableCell>{row.orderID}</TableCell>
+                  <TableCell>{row.orderDate}</TableCell>
+                  <TableCell>{row.firstName} {row.lastNameName}</TableCell>
+                  <TableCell>{row.status}</TableCell>
+                </TableRow>
+              ))}
           </TableBody>
         </Table>
       </TableContainer>

@@ -88,6 +88,7 @@ const SearchCustomers = observer(({customerSearchStore, referenceDataStore}) => 
                 <Form.Group as={Col} md="4">
                 <Form.Label>State</Form.Label>
                   <Form.Control as="select" name="state">
+                    <option>- Select one -</option> 
                     {mapSelectOptions(refData.states, 'state', 'stateID')}
                   </Form.Control>
                 </Form.Group>
@@ -96,7 +97,7 @@ const SearchCustomers = observer(({customerSearchStore, referenceDataStore}) => 
                   <Form.Control placeholder="Phone Number" name="phone"></Form.Control>
                 </Form.Group>
               </Form.Row>
-              <Button className="search" onClick={formikProps.handleSubmit}>Search</Button>
+              <Button className="search" type="submit" onClick={formikProps.handleSubmit}>Search</Button>
             </CwigCard>
           </Form>
         }

@@ -88,12 +88,14 @@ const SearchItems = observer(({itemSearchStore, referenceDataStore}) => {
                 <Form.Group as={Col} md="4">
                   <Form.Label>Inventory Type</Form.Label>
                   <Form.Control as="select" name="typeOfInventory">
+                    <option>- Select one -</option> 
                     {mapSelectOptions(refData.typesOfInventory, 'productType', 'productTypeID')}
                   </Form.Control>
                 </Form.Group>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Publication Format</Form.Label>
                   <Form.Control as="select" name="pulbicationFormat">
+                    <option>- Select one -</option> 
                     {mapSelectOptions(refData.publicationFormats, 'format', 'formatID')}
                   </Form.Control>
                 </Form.Group>

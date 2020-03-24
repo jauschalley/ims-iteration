@@ -88,6 +88,7 @@ const SearchInquiries = observer(({inquirySearchStore, referenceDataStore}) => {
                 <Form.Group as={Col} md="4">
                   <Form.Label>State</Form.Label>
                   <Form.Control as="select" name="state">
+                    <option>- Select one -</option> 
                     {mapSelectOptions(refData.states, 'state', 'stateID')}
                   </Form.Control>
                 </Form.Group>

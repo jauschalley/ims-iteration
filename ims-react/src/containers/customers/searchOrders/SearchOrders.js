@@ -68,12 +68,14 @@ const SearchOrders = observer(({orderSearchStore, referenceDataStore}) => {
               <Form.Group as={Col} md="4">
                   <Form.Label>Order Status</Form.Label>
                   <Form.Control as="select" name="orderStatus">
+                    <option>- Select one -</option> 
                     {mapSelectOptions(refData.orderStatuses, 'status', 'id')}
                   </Form.Control>
                 </Form.Group>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Order Type</Form.Label>
                   <Form.Control as="select" name="orderStatus">
+                    <option>- Select one -</option> 
                     {mapSelectOptions(refData.orderTypes, 'orderType', 'typeID')}
                   </Form.Control>
                 </Form.Group>

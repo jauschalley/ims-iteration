@@ -70,37 +70,35 @@ const SearchItems = observer(({itemSearchStore, referenceDataStore}) => {
         {formikProps =>
           <Form>
             <CwigCard>
-              <Row>
-                <Col md={4}>
-                  <FormLabel>SKU</FormLabel>
-                  <Field placeholder="sku" name="sku"></Field>
-                </Col>
-                <Col md={4}>
-                <FormLabel>Title</FormLabel>
-                  <Field placeholder="Title" name="title"></Field>
-                </Col>
-                <Col md={4}>
-                  <FormLabel>Keyword</FormLabel>
-                  <Field placeholder="Keyword" name="keyword"></Field>
-                </Col>
-              </Row>
-              <Row>
-                <Col md={4}>
-                  <FormLabel>Inventory Type</FormLabel>
-                  <Field as="select" name="typeOfInventory">
+              <Form.Row>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>SKU</Form.Label>
+                  <Form.Control placeholder="sku" name="sku"></Form.Control>
+                </Form.Group>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Title</Form.Label>
+                  <Form.Control placeholder="Title" name="title"></Form.Control>
+                </Form.Group>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Keyword</Form.Label>
+                  <Form.Control placeholder="Keyword" name="keyword"></Form.Control>
+                </Form.Group>
+              </Form.Row>
+              <Form.Row>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Inventory Type</Form.Label>
+                  <Form.Control as="select" name="typeOfInventory">
                     {mapSelectOptions(refData.typesOfInventory, 'productType', 'productTypeID')}
-                  </Field>
-                </Col>
-                <Col md={4}>
-                <FormLabel>Publication Format</FormLabel>
-                  <Field as="select" name="pulbicationFormat">
+                  </Form.Control>
+                </Form.Group>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Publication Format</Form.Label>
+                  <Form.Control as="select" name="pulbicationFormat">
                     {mapSelectOptions(refData.publicationFormats, 'format', 'formatID')}
-                  </Field>
-                </Col>
-              </Row>
-              <Row>
-                <Button className="search" onClick={formikProps.handleSubmit}>Search</Button>
-              </Row>
+                  </Form.Control>
+                </Form.Group>
+              </Form.Row>
+              <Button className="search" onClick={formikProps.handleSubmit}>Search</Button>
             </CwigCard>
           </Form>
         }

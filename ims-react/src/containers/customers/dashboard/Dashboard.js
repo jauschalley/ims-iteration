@@ -16,10 +16,22 @@ import TablePaginationGroup from '../../../components/TablePaginationGroup';
 import {stableSort} from '../../../components/TableSortGroup';
 
 const Dashboard = observer(({customerDashboardStore}) => {
-  let {week, month, quarter, year} = customerDashboardStore.dashboardStatistics.closedCounts;
-  let openInquiries = customerDashboardStore.openInquiries.inquiries;
-  let page = tablePaginationStore.page;
-  let rowsPerPage = tablePaginationStore.rowsPerPage;
+  customerDashboardStore.fetchDashboardStatistics();
+
+  let {week, month, quarter, year} = customerDashboardStore.loading? {} : customerDashboardStore.dashboardStatistics;
+  let openInquiries = customerDashboardStore.loading? {} : customerDashboardStore.openInquiries;
+
+  const [page, setPage] = React.useState(0);
+  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+
+  const handleChangePage = (event, newPage) => {
+    setPage(newPage);
+  };
+
+  const handleChangeRowsPerPage = event => {
+    setRowsPerPage(parseInt(event.target.value, 10));
+    setPage(0);
+  };
 
   const [order, setOrder] = React.useState('desc');
   const [orderBy, setOrderBy] = React.useState('Inquiry Date');
@@ -41,6 +53,8 @@ const Dashboard = observer(({customerDashboardStore}) => {
   };
 
   return(
+    customerDashboardStore.loading ? 
+    <span>Loading</span> :
     <Container>
       <Row><h1 class="margin-30">Customer Dashboard</h1></Row>
       <CwigCard>

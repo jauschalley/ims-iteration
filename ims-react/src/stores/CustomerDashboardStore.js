@@ -1,18 +1,29 @@
-import {observable, decorate} from "mobx";
+import {observable, decorate, action} from "mobx";
+import RequestService from '../services/RequestService';
+import config from '../config';
 
 class CustomerDashboardStore {
   dashboardStatistics = null;
   openInquiries = null;
+  loading = true;
 
-  constructor(dashboardStatistics = null, openInquiries = null) {
-    this.dashboardStatistics = dashboardStatistics || require('../stubs/closed-inquiries.json');
-    this.openInquiries = openInquiries || require('../stubs/open-inquiries.json');
+  fetchDashboardStatistics = () => {
+    RequestService.get(`${config.backendUrl}/inquiry/closedcounts`, (response) => {
+      this.dashboardStatistics = response.data.closedCounts;
+
+      RequestService.post(`${config.backendUrl}/inquiries`, {}, (response) => {
+        this.openInquiries = response.data.inquiries;
+        this.loading = false;
+      });
+    });
   }
 }
 
 decorate(CustomerDashboardStore, {
   dashboardStatistics: observable,
-  openInquiries: observable
+  openInquiries: observable,
+  loading: observable,
+  fetchDashboardStatistics: action
 });
 
 export default CustomerDashboardStore;

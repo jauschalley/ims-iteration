@@ -66,53 +66,51 @@ const SearchInquiries = observer(({inquirySearchStore, referenceDataStore}) => {
         {formikProps =>
           <Form>
             <CwigCard>
-              <Row>
-                <Col md={4}>
-                  <FormLabel>Inquiry Number</FormLabel>
-                  <Field placeholder="Inquiry Number" name="inquiryNumber"></Field>
-                </Col>
-                <Col md={4}>
-                <FormLabel>First Name</FormLabel>
-                  <Field placeholder="First Name" name="firstName"></Field>
-                </Col>
-                <Col md={4}>
-                  <FormLabel>Last Name</FormLabel>
-                  <Field placeholder="Last Name" name="lastName"></Field>
-                </Col>
-              </Row>
-              <Row>
-                <Col md={4}>
-                  <FormLabel>Email</FormLabel>
-                  <Field placeholder="Email" name="email"></Field>
-                </Col>
-                <Col md={4}>
-                  <FormLabel>State</FormLabel>
-                  <Field as="select" name="state">
+              <Form.Row>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Inquiry Number</Form.Label>
+                  <Form.Control placeholder="Inquiry Number" name="inquiryNumber"></Form.Control>
+                </Form.Group>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>First Name</Form.Label>
+                  <Form.Control placeholder="First Name" name="firstName"></Form.Control>
+                </Form.Group>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Last Name</Form.Label>
+                  <Form.Control placeholder="Last Name" name="lastName"></Form.Control>
+                </Form.Group>
+              </Form.Row>
+              <Form.Row>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control placeholder="Email" name="email"></Form.Control>
+                </Form.Group>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>State</Form.Label>
+                  <Form.Control as="select" name="state">
                     {mapSelectOptions(refData.states, 'state', 'stateID')}
-                  </Field>
-                </Col>
-                <Col md={4}>
-                  <FormLabel>Assigned To</FormLabel>
-                  <Field placeholder="Assigned To" name="assignedTo"></Field>
-                </Col>
-              </Row>
-              <Row>
-                <Col md={6}>
-                  <FormLabel>Date Range</FormLabel>
-                  <Field placeholder="Date From" name="dateFrom"></Field>
-                  <Field placeholder="Date To" name="dateTo"></Field>
-                </Col>
-                <Col md={4}>
-                  <FormLabel>Status</FormLabel>
-                  <Field as="select" name="status">
+                  </Form.Control>
+                </Form.Group>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Assigned To</Form.Label>
+                  <Form.Control placeholder="Assigned To" name="assignedTo"></Form.Control>
+                </Form.Group>
+              </Form.Row>
+              <Form.Row>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Date Range</Form.Label>
+                  <Form.Control placeholder="Date From" name="dateFrom"></Form.Control>
+                  <Form.Control placeholder="Date To" name="dateTo"></Form.Control>
+                </Form.Group>
+                <Form.Group as={Col} md="4">
+                  <Form.Label>Status</Form.Label>
+                  <Form.Control as="select" name="status">
                     <option value='0'>Open</option>
                     <option value='1'>Closed</option>
-                  </Field>
-                </Col>
-              </Row>
-              <Row>
-                <Button className="search" onClick={formikProps.handleSubmit}>Search</Button>
-              </Row>
+                  </Form.Control>
+                </Form.Group>
+              </Form.Row>
+              <Button className="search" onClick={formikProps.handleSubmit}>Search</Button>
             </CwigCard>
           </Form>
         }

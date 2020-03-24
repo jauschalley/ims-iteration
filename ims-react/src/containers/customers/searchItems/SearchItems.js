@@ -1,7 +1,7 @@
 import React from 'react';
 import {observer} from "mobx-react";
-import {Formik, Field} from 'formik';
-import {Row, Container, Col, Form, FormLabel, Button} from 'react-bootstrap';
+import {Formik } from 'formik';
+import {Row, Container, Col, Form, Button} from 'react-bootstrap';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -56,14 +56,14 @@ const SearchItems = observer(({itemSearchStore, referenceDataStore}) => {
 
   return(
     <Container>
-      <Row><h1 class="margin-30">Search Items</h1></Row>
+      <Row><h1 className="margin-30">Search Items</h1></Row>
       <Formik
       initialValues={{
-        sku: '',
-        title: '',
+        SKU: '',
+        Title: '',
         keyword: '',
-        typeOfInventory: '',
-        publicationFormat: ''
+        typeofinventory: '',
+        publicationformat: ''
       }}
       onSubmit={(values) => itemSearchStore.searchItems(values)}
       >
@@ -73,28 +73,28 @@ const SearchItems = observer(({itemSearchStore, referenceDataStore}) => {
               <Form.Row>
                 <Form.Group as={Col} md="4">
                   <Form.Label>SKU</Form.Label>
-                  <Form.Control placeholder="sku" name="sku"></Form.Control>
+                  <Form.Control placeholder="SKU" name="SKU" onChange={formikProps.handleChange}></Form.Control>
                 </Form.Group>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Title</Form.Label>
-                  <Form.Control placeholder="Title" name="title"></Form.Control>
+                  <Form.Control placeholder="Title" name="Title" onChange={formikProps.handleChange}></Form.Control>
                 </Form.Group>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Keyword</Form.Label>
-                  <Form.Control placeholder="Keyword" name="keyword"></Form.Control>
+                  <Form.Control placeholder="Keyword" name="keyword" onChange={formikProps.handleChange}></Form.Control>
                 </Form.Group>
               </Form.Row>
               <Form.Row>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Inventory Type</Form.Label>
-                  <Form.Control as="select" name="typeOfInventory">
+                  <Form.Control as="select" name="typeofinventory" onChange={formikProps.handleChange}>
                     <option>- Select one -</option> 
                     {mapSelectOptions(refData.typesOfInventory, 'productType', 'productTypeID')}
                   </Form.Control>
                 </Form.Group>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Publication Format</Form.Label>
-                  <Form.Control as="select" name="pulbicationFormat">
+                  <Form.Control as="select" name="publicationformat" onChange={formikProps.handleChange}>
                     <option>- Select one -</option> 
                     {mapSelectOptions(refData.publicationFormats, 'format', 'formatID')}
                   </Form.Control>

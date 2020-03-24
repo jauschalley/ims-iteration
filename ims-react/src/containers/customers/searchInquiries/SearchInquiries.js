@@ -1,7 +1,7 @@
 import React from 'react';
 import {observer} from "mobx-react";
-import {Formik, Field} from 'formik';
-import {Row, Container, Col, Form, FormLabel, Button} from 'react-bootstrap';
+import {Formik} from 'formik';
+import {Row, Container, Col, Form, Button} from 'react-bootstrap';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -48,10 +48,10 @@ const SearchInquiries = observer(({inquirySearchStore, referenceDataStore}) => {
 
   return(
     <Container>
-      <Row><h1 class="margin-30">Search Inquiries</h1></Row>
+      <Row><h1 className="margin-30">Search Inquiries</h1></Row>
       <Formik
       initialValues={{
-        inquiryNumber: '',
+        inquiryID: '',
         firstName: '',
         lastName: '',
         email: '',
@@ -69,43 +69,43 @@ const SearchInquiries = observer(({inquirySearchStore, referenceDataStore}) => {
               <Form.Row>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Inquiry Number</Form.Label>
-                  <Form.Control placeholder="Inquiry Number" name="inquiryNumber"></Form.Control>
+                  <Form.Control placeholder="Inquiry Number" name="inquiryID" onChange={formikProps.handleChange}></Form.Control>
                 </Form.Group>
                 <Form.Group as={Col} md="4">
                   <Form.Label>First Name</Form.Label>
-                  <Form.Control placeholder="First Name" name="firstName"></Form.Control>
+                  <Form.Control placeholder="First Name" name="firstName" onChange={formikProps.handleChange}></Form.Control>
                 </Form.Group>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Last Name</Form.Label>
-                  <Form.Control placeholder="Last Name" name="lastName"></Form.Control>
+                  <Form.Control placeholder="Last Name" name="lastName" onChange={formikProps.handleChange}></Form.Control>
                 </Form.Group>
               </Form.Row>
               <Form.Row>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Email</Form.Label>
-                  <Form.Control placeholder="Email" name="email"></Form.Control>
+                  <Form.Control placeholder="Email" name="email" onChange={formikProps.handleChange}></Form.Control>
                 </Form.Group>
                 <Form.Group as={Col} md="4">
                   <Form.Label>State</Form.Label>
-                  <Form.Control as="select" name="state">
+                  <Form.Control as="select" name="state" onChange={formikProps.handleChange}>
                     <option>- Select one -</option> 
                     {mapSelectOptions(refData.states, 'state', 'stateID')}
                   </Form.Control>
                 </Form.Group>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Assigned To</Form.Label>
-                  <Form.Control placeholder="Assigned To" name="assignedTo"></Form.Control>
+                  <Form.Control placeholder="Assigned To" name="assignedTo" onChange={formikProps.handleChange}></Form.Control>
                 </Form.Group>
               </Form.Row>
               <Form.Row>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Date Range</Form.Label>
                   <Form.Control placeholder="Date From" name="dateFrom"></Form.Control>
-                  <Form.Control placeholder="Date To" name="dateTo"></Form.Control>
+                  <Form.Control placeholder="Date To" name="dateTo" onChange={formikProps.handleChange}></Form.Control>
                 </Form.Group>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Status</Form.Label>
-                  <Form.Control as="select" name="status">
+                  <Form.Control as="select" name="status" onChange={formikProps.handleChange}>
                     <option value='0'>Open</option>
                     <option value='1'>Closed</option>
                   </Form.Control>

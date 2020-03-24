@@ -1,7 +1,7 @@
 import React from 'react';
 import {observer} from "mobx-react";
-import {Formik, Field} from 'formik';
-import {Row, Container, Col, Form, FormLabel, Button} from 'react-bootstrap';
+import {Formik } from 'formik';
+import {Row, Container, Col, Form, Button} from 'react-bootstrap';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -48,16 +48,16 @@ const SearchOrders = observer(({orderSearchStore, referenceDataStore}) => {
 
   return(
     <Container>
-      <Row><h1 class="margin-30">Search Orders</h1></Row>
+      <Row><h1 className="margin-30">Search Orders</h1></Row>
       <Formik initialValues={{
-        orderStatus:'',
-        orderType: '',
-        orderId: '',
-        customerFirstName: '',
-        customerLastName: '',
-        zipCode: '',
-        dateFrom: '',
-        dateTo: ''
+        statusID:'',
+        orderTypeID: '',
+        orderID: '',
+        firstName: '',
+        lastName: '',
+        postalCode: '',
+        orderDateFrom: '',
+        orderDateTo: ''
       }}
       onSubmit={(values) => orderSearchStore.searchOrders(values)}
       >
@@ -67,42 +67,42 @@ const SearchOrders = observer(({orderSearchStore, referenceDataStore}) => {
               <Form.Row>
               <Form.Group as={Col} md="4">
                   <Form.Label>Order Status</Form.Label>
-                  <Form.Control as="select" name="orderStatus">
+                  <Form.Control as="select" name="statusID" onChange={formikProps.handleChange}>
                     <option>- Select one -</option> 
                     {mapSelectOptions(refData.orderStatuses, 'status', 'id')}
                   </Form.Control>
                 </Form.Group>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Order Type</Form.Label>
-                  <Form.Control as="select" name="orderStatus">
+                  <Form.Control as="select" name="orderTypeID" onChange={formikProps.handleChange}>
                     <option>- Select one -</option> 
                     {mapSelectOptions(refData.orderTypes, 'orderType', 'typeID')}
                   </Form.Control>
                 </Form.Group>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Order ID</Form.Label>
-                  <Form.Control placeholder="Order ID" name="orderId"></Form.Control>
+                  <Form.Control placeholder="Order ID" name="orderID" onChange={formikProps.handleChange}></Form.Control>
                 </Form.Group>
               </Form.Row>
               <Form.Row>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Customer First Name</Form.Label>
-                  <Form.Control placeholder="First Name" name="customerFirstName"></Form.Control>
+                  <Form.Control placeholder="First Name" name="firstName" onChange={formikProps.handleChange}></Form.Control>
                 </Form.Group>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Customer Last Name</Form.Label>
-                  <Form.Control placeholder="Last Name" name="customerLastName"></Form.Control>
+                  <Form.Control placeholder="Last Name" name="lastName" onChange={formikProps.handleChange}></Form.Control>
                 </Form.Group>
                 <Form.Group as={Col} md="4">
                   <Form.Label>Customer Zip Code</Form.Label>
-                  <Form.Control placeholder="Zip Code" name="zipCode"></Form.Control>
+                  <Form.Control placeholder="Zip Code" name="postalCode" onChange={formikProps.handleChange}></Form.Control>
                 </Form.Group>
               </Form.Row>
               <Form.Row>
                 <Form.Group as={Col} md="6">
                   <Form.Label>Date Range</Form.Label>
-                  <Form.Control placeholder="Date From" name="dateFrom"></Form.Control>
-                  <Form.Control placeholder="Date To" name="dateTo"></Form.Control>
+                  <Form.Control placeholder="Date From" name="orderDateFrom" onChange={formikProps.handleChange}></Form.Control>
+                  <Form.Control placeholder="Date To" name="orderDateTo" onChange={formikProps.handleChange}></Form.Control>
                 </Form.Group>
               </Form.Row>
               <Button className="search" onClick={formikProps.handleSubmit}>Search</Button>

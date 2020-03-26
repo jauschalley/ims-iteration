@@ -43,7 +43,7 @@ const SearchInquiries = observer(({inquirySearchStore, referenceDataStore}) => {
     const isDesc = orderBy === property && order === "desc";
     setOrder(isDesc ? "asc" : "desc");
     setOrderBy(property);
-    setOrderByApiField(tableHeadCells.filter( field => field.name == property)[0].apiFieldName)
+    setOrderByApiField(tableHeadCells.filter( field => field.name === property)[0].apiFieldName)
   };
 
   return(

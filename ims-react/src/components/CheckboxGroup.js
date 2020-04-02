@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {Form, Row, Col} from 'react-bootstrap';
 
 const InputFeedback = ({error}) =>
   error ? <div className={"input-feedback"}>{error}</div> : null;
@@ -13,20 +14,19 @@ const Checkbox = ({
   ...props
 }) => {
   return (
-    <span className="margin-right-60">
-      <input
-        name={name}
-        id={id}
-        type="checkbox"
-        value={value}
-        checked={value}
-        onChange={onChange}
-        onBlur={onBlur}
-        className="margin-right-5"
+    <Form.Check 
+    inline 
+    name={name}
+    label={label} 
+    type="checkbox" 
+    id={id}
+    value={value}
+    checked={value}
+    onChange={onChange}
+    onBlur={onBlur}
+    className={"margin-right-15 col-md-3"}
+    {...props}
       />
-      <label htmlFor={id} className="">{label}</label>
-      {touched[name] && <InputFeedback error={errors[name]} />}
-    </span>
   );
 };
 
@@ -57,6 +57,7 @@ class CheckboxGroup extends React.Component {
       <div className={classes}>
         <fieldset>
           <legend>{label}</legend>
+          <Form.Group>
           {React.Children.map(children, child => {
             return React.cloneElement(child, {
               field: {
@@ -67,6 +68,7 @@ class CheckboxGroup extends React.Component {
             });
           })}
           {touched && <InputFeedback error={error} />}
+          </Form.Group>
         </fieldset>
       </div>
     );
